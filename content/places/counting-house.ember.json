@@ -1,0 +1,519 @@
+{
+  "formatVersion": 1,
+  "id": "counting-house",
+  "title": "Leaf Counting House",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "SIMULATION. Gamina's paper ledger beside the Library. No wallets, no chain, no dollars.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      4.2
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "ch-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        0.1,
+        10
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        4.4,
+        0.28
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-west",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4.4,
+        10
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6,
+          2.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-east",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4.4,
+        10
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6,
+          2.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-l1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -3,
+          3,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-l2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          3,
+          3,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "SIMULATION\nLeaf Counting House\nGamina's ledger\nNo wallets. No chain.",
+      "style": "wood",
+      "width": 3.2,
+      "height": 1.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          3.15,
+          -3.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-desk",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        0.8,
+        0.9
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.75,
+          -1.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-book",
+      "kind": "sign",
+      "movable": false,
+      "text": "Paper ledger\n1 Leaf = 1000 units\nSteward spend debits the seat\nRequest ID. Role only.",
+      "style": "draft",
+      "width": 2.4,
+      "height": 1.2,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          1.32,
+          -0.62
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-sheet",
+      "kind": "broadsheet",
+      "movable": false,
+      "lines": [
+        "SIMULATION",
+        "Fifty-year supply",
+        "Not a spend",
+        "slow: 4812.5 Leaf, 57 claimed",
+        "steady: 6034 Leaf, 150 claimed",
+        "brisk: 7084 Leaf, 150 claimed",
+        "Leaf stays at 0"
+      ],
+      "transform": {
+        "position": [
+          -3.6,
+          1.7,
+          -2.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ch-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          3.2,
+          0,
+          3
+        ],
+        "rotation": [
+          0,
+          -0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "counting-house-to-library",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "counting-house-to-library",
+      "label": "Library at Sarth",
+      "transform": {
+        "position": [
+          -3.4,
+          0,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "counting-house-to-crypto-hall",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "counting-house-to-crypto-hall",
+      "label": "Crypto hall",
+      "transform": {
+        "position": [
+          4.6,
+          0,
+          4.15
+        ],
+        "rotation": [
+          0,
+          -0.2,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "counting-house-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "counting-house-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          4.4
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "counting-house-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Leaf Counting House",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "counting-house-to-library",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/counting-house/library",
+      "label": "Library at Sarth",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "counting-house-to-crypto-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/counting-house/crypto-hall",
+      "label": "Crypto hall",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "crypto-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "SIMULATION / NOT DEPLOYED. Supply pinned at 0.",
+      "steps": 1
+    },
+    {
+      "id": "counting-house-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/counting-house/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

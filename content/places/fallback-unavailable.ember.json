@@ -1,0 +1,313 @@
+{
+  "formatVersion": 1,
+  "id": "fallback-unavailable",
+  "title": "The path is dark",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A gate did not open. This clearing is the mandatory fallback. The way back is lit.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "f-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        24,
+        0.16,
+        24
+      ],
+      "material": "moss",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-lantern",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-hearth",
+      "kind": "hearth",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-bench",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "This gate did not open.\nThe way is still here.\nThe public map can take you on.",
+      "style": "wood",
+      "width": 3.2,
+      "height": 1.1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.5,
+          -5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -3,
+          0,
+          2
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fallback-unavailable-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "fallback-unavailable-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-tree",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#c4511a",
+      "scale": 1.2,
+      "transform": {
+        "position": [
+          -6,
+          0,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "f-tree-2",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#e08a2a",
+      "scale": 1,
+      "transform": {
+        "position": [
+          6,
+          0,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fallback-unavailable-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "The path is dark",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          4.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "fallback-unavailable-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/fallback-unavailable/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

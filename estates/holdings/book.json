@@ -1,0 +1,257 @@
+{
+  "leaf": 0,
+  "lines": [
+    {
+      "seq": 1,
+      "kind": "ESTABLISHED",
+      "key": "keeper",
+      "bId": "B-0001",
+      "eId": "E-0001",
+      "being": "the Keeper",
+      "estate": "the Keeper's estate",
+      "file": "keeper.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 1,
+        "name": "Oak Ember",
+        "look": "bronze oak-leaf key with an ember in the bow"
+      },
+      "sealedIndex": "index-only",
+      "minter": {
+        "charges": 71,
+        "lockedTo": "E-0001",
+        "moves": false
+      }
+    },
+    {
+      "seq": 2,
+      "kind": "ESTABLISHED",
+      "key": "household",
+      "bId": "B-0002",
+      "eId": "E-0002",
+      "being": "the Keeper's household estate",
+      "estate": "the Keeper's household estate",
+      "file": "household.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 3,
+        "name": "Iron Leaf",
+        "look": "iron leaf key hanging over the book"
+      },
+      "sealedIndex": "index-only",
+      "minter": {
+        "charges": 71,
+        "lockedTo": "E-0002",
+        "moves": false
+      }
+    },
+    {
+      "seq": 3,
+      "kind": "ESTABLISHED",
+      "key": "arutha",
+      "bId": "B-0003",
+      "eId": "E-0003",
+      "being": "Arutha",
+      "estate": "Arutha",
+      "file": "arutha.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 2,
+        "name": "Glass Seal",
+        "look": "glass seal key inside a 30-segment ring that lights up day by day"
+      },
+      "sealedIndex": "index-only",
+      "minter": null
+    },
+    {
+      "seq": 4,
+      "kind": "ESTABLISHED",
+      "key": "martin",
+      "bId": "B-0004",
+      "eId": "E-0004",
+      "being": "Martin",
+      "estate": "Martin",
+      "file": "martin.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 3,
+        "name": "Iron Leaf",
+        "look": "iron leaf key hanging over the book"
+      },
+      "sealedIndex": "index-only",
+      "minter": null
+    },
+    {
+      "seq": 5,
+      "kind": "ESTABLISHED",
+      "key": "nessie",
+      "bId": "B-0005",
+      "eId": "E-0005",
+      "being": "Nessie",
+      "estate": "Nessie",
+      "file": "nessie.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 2,
+        "name": "Glass Seal",
+        "look": "glass seal key inside a 30-segment ring that lights up day by day"
+      },
+      "sealedIndex": "index-only",
+      "minter": null
+    },
+    {
+      "seq": 6,
+      "kind": "ESTABLISHED",
+      "key": "jimmy",
+      "bId": "B-0006",
+      "eId": "E-0006",
+      "being": "Jimmy",
+      "estate": "Jimmy",
+      "file": "jimmy.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 2,
+        "name": "Glass Seal",
+        "look": "glass seal key inside a 30-segment ring that lights up day by day"
+      },
+      "sealedIndex": "index-only",
+      "minter": null
+    },
+    {
+      "seq": 7,
+      "kind": "ESTABLISHED",
+      "key": "roldemese",
+      "bId": "B-0007",
+      "eId": "E-0007",
+      "being": "Roldemese",
+      "estate": "Roldemese",
+      "file": "roldemese.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 2,
+        "name": "Glass Seal",
+        "look": "glass seal key inside a 30-segment ring that lights up day by day"
+      },
+      "sealedIndex": "index-only",
+      "minter": null
+    },
+    {
+      "seq": 8,
+      "kind": "ESTABLISHED",
+      "key": "gamina",
+      "bId": "B-0008",
+      "eId": "E-0008",
+      "being": "Gamina",
+      "estate": "Gamina",
+      "file": "gamina.md",
+      "at": "~9:08 PM PT Nov 15, 2026 🍂🔥🕰️",
+      "founders": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "verifier": "Jimmy (census)",
+      "recorder": "Gamina",
+      "source": "both founders; sealed decree CHARTER v8",
+      "citizenship": "already-held",
+      "emberCode": null,
+      "leaf": 0,
+      "fireMinted": false,
+      "estateKey": {
+        "status": "pending",
+        "lookId": 3,
+        "name": "Iron Leaf",
+        "look": "iron leaf key hanging over the book"
+      },
+      "sealedIndex": "index-only",
+      "minter": null
+    }
+  ],
+  "sealed": [],
+  "fireBook": [],
+  "chitBook": [],
+  "leafBook": []
+}

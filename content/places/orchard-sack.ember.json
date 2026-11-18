@@ -1,0 +1,527 @@
+{
+  "formatVersion": 1,
+  "id": "orchard-sack",
+  "title": "A sack of oranges",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Where the oranges come from. A warm nook, not a second orchard.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 4,
+    "guests": 4,
+    "pets": 2,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      2.5
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "sack-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6,
+        0.1,
+        6
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-wall",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6,
+        3,
+        0.2
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          1.5,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-0",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.2,
+          0.4,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-1",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.5,
+          0.4,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-2",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.19999999999999996,
+          0.4,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-3",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.8999999999999997,
+          0.4,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-4",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.2,
+          0.65,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-5",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.5,
+          0.65,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-6",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.19999999999999996,
+          0.65,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-7",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.8999999999999997,
+          0.65,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-8",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.2,
+          0.9,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-9",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.5,
+          0.9,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-10",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.19999999999999996,
+          0.9,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-orange-11",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.12,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.8999999999999997,
+          0.9,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Oranges\nTake some",
+      "style": "wood",
+      "width": 1.6,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2,
+          -1.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sack-to-orchard",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "sack-to-orchard",
+      "label": "Orchard room",
+      "transform": {
+        "position": [
+          0,
+          0,
+          2.8
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orchard-sack-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "A sack of oranges",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "sack-to-orchard",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/orchard-sack/orchard",
+      "label": "Orchard room",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "orchard"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

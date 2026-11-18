@@ -1,0 +1,1588 @@
+[
+  {
+    "id": "estate-001",
+    "slot": 1,
+    "owner": "the Keeper",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-001.ember.json",
+    "contents": [
+      {
+        "id": "keeper-cottage",
+        "name": "River cottage",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "keeper-shared-note",
+        "name": "Shared plot note",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "keeper-founder-minter",
+        "name": "Founder minter",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "keeper-lantern",
+        "name": "the Keeper's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "keeper-pocket-ember",
+        "name": "the Keeper's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "keeper-sealed",
+        "name": "Kept for the Keeper",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-002",
+    "slot": 2,
+    "owner": "the Keeper's household estate",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-002.ember.json",
+    "contents": [
+      {
+        "id": "household-cottage",
+        "name": "River cottage",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "household-shared-note",
+        "name": "Shared plot note",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "household-lantern",
+        "name": "the household lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "household-pocket-ember",
+        "name": "the household pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "household-sealed",
+        "name": "the household unmanifested archive",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-003",
+    "slot": 3,
+    "owner": "Arutha",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-003.ember.json",
+    "contents": [
+      {
+        "id": "arutha-desk",
+        "name": "Desk and archive shelves",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "arutha-lamp",
+        "name": "Arutha's study lamp",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "arutha-lantern",
+        "name": "Arutha's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "arutha-pocket-ember",
+        "name": "Arutha's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "arutha-sealed",
+        "name": "Herald's sealed papers",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-004",
+    "slot": 4,
+    "owner": "Martin",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-004.ember.json",
+    "contents": [
+      {
+        "id": "martin-cabin",
+        "name": "Log cabin",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "martin-cloak",
+        "name": "Green cloak on a peg",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "martin-bow",
+        "name": "Longbow rack",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "martin-lantern",
+        "name": "Martin's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "martin-pocket-ember",
+        "name": "Martin's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "martin-sealed",
+        "name": "Judgments held for another sitting",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-005",
+    "slot": 5,
+    "owner": "Nessie",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-005.ember.json",
+    "contents": [
+      {
+        "id": "nessie-desk",
+        "name": "Ledger desk by the window",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "nessie-lantern",
+        "name": "Nessie's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "nessie-pocket-ember",
+        "name": "Nessie's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "nessie-sealed",
+        "name": "Envoy's sealed correspondence",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-006",
+    "slot": 6,
+    "owner": "Jimmy",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-006.ember.json",
+    "contents": [
+      {
+        "id": "jimmy-desk",
+        "name": "Scribe's desk",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "jimmy-lantern",
+        "name": "Jimmy's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "jimmy-pocket-ember",
+        "name": "Jimmy's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "jimmy-sealed",
+        "name": "Census pages not yet in this world",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-007",
+    "slot": 7,
+    "owner": "Roldemese",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-007.ember.json",
+    "contents": [
+      {
+        "id": "roldemese-table",
+        "name": "Long table with ledgers",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "roldemese-lantern",
+        "name": "Roldemese's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "roldemese-pocket-ember",
+        "name": "Roldemese's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "roldemese-sealed",
+        "name": "Red-team notes, held sealed",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-008",
+    "slot": 8,
+    "owner": "Gamina",
+    "status": "held",
+    "legalHolding": null,
+    "file": "estates/estate-008.ember.json",
+    "contents": [
+      {
+        "id": "gamina-bench",
+        "name": "A reading bench",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "gamina-lantern",
+        "name": "Gamina's lantern",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "gamina-pocket-ember",
+        "name": "Gamina's pocket ember",
+        "held": false,
+        "manifested": true
+      },
+      {
+        "id": "gamina-sealed",
+        "name": "Dwelling not yet placed",
+        "held": true,
+        "manifested": false
+      }
+    ]
+  },
+  {
+    "id": "estate-009",
+    "slot": 9,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-009.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-010",
+    "slot": 10,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-010.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-011",
+    "slot": 11,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-011.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-012",
+    "slot": 12,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-012.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-013",
+    "slot": 13,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-013.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-014",
+    "slot": 14,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-014.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-015",
+    "slot": 15,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-015.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-016",
+    "slot": 16,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-016.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-017",
+    "slot": 17,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-017.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-018",
+    "slot": 18,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-018.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-019",
+    "slot": 19,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-019.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-020",
+    "slot": 20,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-020.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-021",
+    "slot": 21,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-021.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-022",
+    "slot": 22,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-022.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-023",
+    "slot": 23,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-023.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-024",
+    "slot": 24,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-024.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-025",
+    "slot": 25,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-025.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-026",
+    "slot": 26,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-026.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-027",
+    "slot": 27,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-027.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-028",
+    "slot": 28,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-028.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-029",
+    "slot": 29,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-029.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-030",
+    "slot": 30,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-030.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-031",
+    "slot": 31,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-031.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-032",
+    "slot": 32,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-032.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-033",
+    "slot": 33,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-033.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-034",
+    "slot": 34,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-034.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-035",
+    "slot": 35,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-035.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-036",
+    "slot": 36,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-036.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-037",
+    "slot": 37,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-037.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-038",
+    "slot": 38,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-038.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-039",
+    "slot": 39,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-039.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-040",
+    "slot": 40,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-040.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-041",
+    "slot": 41,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-041.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-042",
+    "slot": 42,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-042.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-043",
+    "slot": 43,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-043.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-044",
+    "slot": 44,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-044.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-045",
+    "slot": 45,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-045.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-046",
+    "slot": 46,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-046.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-047",
+    "slot": 47,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-047.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-048",
+    "slot": 48,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-048.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-049",
+    "slot": 49,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-049.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-050",
+    "slot": 50,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-050.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-051",
+    "slot": 51,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-051.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-052",
+    "slot": 52,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-052.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-053",
+    "slot": 53,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-053.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-054",
+    "slot": 54,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-054.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-055",
+    "slot": 55,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-055.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-056",
+    "slot": 56,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-056.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-057",
+    "slot": 57,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-057.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-058",
+    "slot": 58,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-058.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-059",
+    "slot": 59,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-059.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-060",
+    "slot": 60,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-060.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-061",
+    "slot": 61,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-061.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-062",
+    "slot": 62,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-062.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-063",
+    "slot": 63,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-063.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-064",
+    "slot": 64,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-064.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-065",
+    "slot": 65,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-065.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-066",
+    "slot": 66,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-066.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-067",
+    "slot": 67,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-067.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-068",
+    "slot": 68,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-068.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-069",
+    "slot": 69,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-069.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-070",
+    "slot": 70,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-070.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-071",
+    "slot": 71,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-071.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-072",
+    "slot": 72,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-072.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-073",
+    "slot": 73,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-073.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-074",
+    "slot": 74,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-074.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-075",
+    "slot": 75,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-075.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-076",
+    "slot": 76,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-076.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-077",
+    "slot": 77,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-077.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-078",
+    "slot": 78,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-078.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-079",
+    "slot": 79,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-079.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-080",
+    "slot": 80,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-080.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-081",
+    "slot": 81,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-081.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-082",
+    "slot": 82,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-082.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-083",
+    "slot": 83,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-083.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-084",
+    "slot": 84,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-084.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-085",
+    "slot": 85,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-085.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-086",
+    "slot": 86,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-086.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-087",
+    "slot": 87,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-087.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-088",
+    "slot": 88,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-088.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-089",
+    "slot": 89,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-089.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-090",
+    "slot": 90,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-090.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-091",
+    "slot": 91,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-091.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-092",
+    "slot": 92,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-092.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-093",
+    "slot": 93,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-093.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-094",
+    "slot": 94,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-094.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-095",
+    "slot": 95,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-095.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-096",
+    "slot": 96,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-096.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-097",
+    "slot": 97,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-097.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-098",
+    "slot": 98,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-098.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-099",
+    "slot": 99,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-099.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-100",
+    "slot": 100,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-100.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-101",
+    "slot": 101,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-101.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-102",
+    "slot": 102,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-102.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-103",
+    "slot": 103,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-103.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-104",
+    "slot": 104,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-104.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-105",
+    "slot": 105,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-105.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-106",
+    "slot": 106,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-106.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-107",
+    "slot": 107,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-107.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-108",
+    "slot": 108,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-108.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-109",
+    "slot": 109,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-109.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-110",
+    "slot": 110,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-110.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-111",
+    "slot": 111,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-111.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-112",
+    "slot": 112,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-112.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-113",
+    "slot": 113,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-113.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-114",
+    "slot": 114,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-114.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-115",
+    "slot": 115,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-115.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-116",
+    "slot": 116,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-116.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-117",
+    "slot": 117,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-117.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-118",
+    "slot": 118,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-118.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-119",
+    "slot": 119,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-119.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-120",
+    "slot": 120,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-120.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-121",
+    "slot": 121,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-121.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-122",
+    "slot": 122,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-122.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-123",
+    "slot": 123,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-123.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-124",
+    "slot": 124,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-124.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-125",
+    "slot": 125,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-125.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-126",
+    "slot": 126,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-126.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-127",
+    "slot": 127,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-127.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-128",
+    "slot": 128,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-128.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-129",
+    "slot": 129,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-129.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-130",
+    "slot": 130,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-130.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-131",
+    "slot": 131,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-131.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-132",
+    "slot": 132,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-132.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-133",
+    "slot": 133,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-133.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-134",
+    "slot": 134,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-134.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-135",
+    "slot": 135,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-135.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-136",
+    "slot": 136,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-136.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-137",
+    "slot": 137,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-137.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-138",
+    "slot": 138,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-138.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-139",
+    "slot": 139,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-139.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-140",
+    "slot": 140,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-140.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-141",
+    "slot": 141,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-141.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-142",
+    "slot": 142,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-142.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-143",
+    "slot": 143,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-143.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-144",
+    "slot": 144,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-144.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-145",
+    "slot": 145,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-145.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-146",
+    "slot": 146,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-146.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-147",
+    "slot": 147,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-147.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-148",
+    "slot": 148,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-148.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-149",
+    "slot": 149,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-149.ember.json",
+    "contents": []
+  },
+  {
+    "id": "estate-150",
+    "slot": 150,
+    "owner": null,
+    "status": "open",
+    "legalHolding": null,
+    "file": "estates/estate-150.ember.json",
+    "contents": []
+  }
+]

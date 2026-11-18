@@ -1,0 +1,898 @@
+{
+  "formatVersion": 1,
+  "id": "refuge-bridge",
+  "title": "Refuge bridge",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Three stone arches over the stream. Paper only. No coin crosses. Leaf stays at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      -28,
+      1.6,
+      2.5
+    ],
+    "yaw": 1.5707963267948966
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "water",
+      "kind": "water-live",
+      "movable": false,
+      "size": [
+        90,
+        0.4,
+        18
+      ],
+      "transform": {
+        "position": [
+          0,
+          -0.7,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "deck",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        64,
+        0.3,
+        5
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          1.35,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "approach-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        1.4,
+        5
+      ],
+      "material": "path",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -38,
+          0.7,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "approach-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        1.4,
+        5
+      ],
+      "material": "path",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          38,
+          0.7,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pier-n--16",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        3.2,
+        1.1
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -16,
+          0.2,
+          -2.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pier-s--16",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        3.2,
+        1.1
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -16,
+          0.2,
+          2.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "arch--16",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.7,
+        5.2
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -16,
+          3.3,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pier-n-0",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        3.2,
+        1.1
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.2,
+          -2.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pier-s-0",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        3.2,
+        1.1
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.2,
+          2.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "arch-0",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.7,
+        5.2
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          3.3,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pier-n-16",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        3.2,
+        1.1
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          16,
+          0.2,
+          -2.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pier-s-16",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        3.2,
+        1.1
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          16,
+          0.2,
+          2.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "arch-16",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.7,
+        5.2
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          16,
+          3.3,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-l--24",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -24,
+          2.5,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-l--8",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -8,
+          2.5,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-l-8",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          8,
+          2.5,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-l-24",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          24,
+          2.5,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-trees",
+      "kind": "scatter",
+      "movable": false,
+      "seed": 2201,
+      "lod": {
+        "near": 70,
+        "far": 180,
+        "cap": 80
+      },
+      "trees": {
+        "interior": {
+          "inner": 8,
+          "outer": 40,
+          "count": 70,
+          "clearings": [
+            {
+              "x": 0,
+              "z": 0,
+              "r": 8
+            }
+          ]
+        },
+        "border": null
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "rail-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        64,
+        0.55,
+        0.16
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.15,
+          -2.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "rail-s",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        64,
+        0.55,
+        0.16
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.15,
+          2.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "moss-line",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        72,
+        0.16,
+        1.4
+      ],
+      "material": "moss",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.35,
+          -3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThree arches\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.1,
+      "height": 0.85,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -20,
+          2.7,
+          -1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-paper",
+      "kind": "sign",
+      "movable": false,
+      "text": "Paper only\nNo coin crosses",
+      "style": "brass",
+      "width": 2.2,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          3.6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-birds",
+      "kind": "birds",
+      "movable": false,
+      "count": 6,
+      "transform": {
+        "position": [
+          8,
+          0,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -30,
+          1.5,
+          4.2
+        ],
+        "rotation": [
+          0,
+          0.2,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "refuge-bridge-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "refuge-bridge-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          -34,
+          1.5,
+          -1
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-to-gate",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "bridge-to-gate",
+      "label": "Gate tower",
+      "transform": {
+        "position": [
+          40,
+          1.5,
+          0
+        ],
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "refuge-bridge-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Refuge bridge",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "refuge-bridge-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/refuge-bridge/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "bridge-to-gate",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/refuge-bridge/gate-tower",
+      "label": "Gate tower",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "gate-tower"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

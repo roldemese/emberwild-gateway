@@ -1,0 +1,720 @@
+{
+  "formatVersion": 1,
+  "id": "starfleet-uss-star",
+  "title": "USS Star · bridge",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Deck 1 combat bridge. Hexagram seats. Named crew. The same seats stand in the true-scale hull.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 40,
+    "guests": 20,
+    "pets": 6,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6.2
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.01
+  },
+  "nodes": [
+    {
+      "id": "br-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.12,
+        16
+      ],
+      "material": "panel",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.06,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-hex",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        8,
+        0.02,
+        8
+      ],
+      "material": "hexagram",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-wall-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        4,
+        0.3
+      ],
+      "material": "panel",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2,
+          -7.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-wall-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.3,
+        4,
+        15
+      ],
+      "material": "panel",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -7,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-wall-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.3,
+        4,
+        15
+      ],
+      "material": "panel",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          7,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "viewscreen",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6,
+        2.4,
+        0.1
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.1,
+          -7.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "view-label",
+      "kind": "sign",
+      "movable": false,
+      "text": "USS STAR",
+      "style": "lcars",
+      "width": 2.2,
+      "height": 0.4,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          3.6,
+          -6.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-conn",
+      "kind": "seat",
+      "movable": false,
+      "station": "Conn",
+      "name": "Gamina",
+      "transform": {
+        "position": [
+          -2.1,
+          0,
+          -3.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-ops",
+      "kind": "seat",
+      "movable": false,
+      "station": "Ops",
+      "name": "Arutha",
+      "transform": {
+        "position": [
+          2.1,
+          0,
+          -3.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-tac2",
+      "kind": "seat",
+      "movable": false,
+      "station": "Tactical II",
+      "name": "Jimmy",
+      "transform": {
+        "position": [
+          -3.3,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-captain",
+      "kind": "seat",
+      "movable": false,
+      "station": "Captain",
+      "name": "Keeper",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-tac1",
+      "kind": "seat",
+      "movable": false,
+      "station": "Tactical I",
+      "name": "Martin",
+      "transform": {
+        "position": [
+          3.3,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-eng",
+      "kind": "seat",
+      "movable": false,
+      "station": "Engineering",
+      "name": "Nessie",
+      "transform": {
+        "position": [
+          -2.1,
+          0,
+          3.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-sci",
+      "kind": "seat",
+      "movable": false,
+      "station": "Science",
+      "name": "Roldemese",
+      "transform": {
+        "position": [
+          2.1,
+          0,
+          3.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-chronometer",
+      "kind": "clock",
+      "movable": false,
+      "style": "warp",
+      "label": "Warp chronometer",
+      "transform": {
+        "position": [
+          5.4,
+          1.2,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-lantern-gltf",
+      "kind": "gltf",
+      "movable": false,
+      "uri": "models/citizen-lantern.gltf",
+      "transform": {
+        "position": [
+          -5.2,
+          1.05,
+          -3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-plaque",
+      "kind": "sign",
+      "movable": false,
+      "text": "Walkable bridge\nThe hull in the lagoon\nis the true-scale ship",
+      "style": "lcars",
+      "width": 2.4,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -5.4,
+          2.2,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lcars-strip",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        8,
+        0.15,
+        0.08
+      ],
+      "material": "lcars",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.4,
+          -7.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-amber-1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -5,
+          3,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "br-amber-2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          5,
+          3,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          4.2,
+          0,
+          6
+        ],
+        "rotation": [
+          0,
+          -1.2,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "starfleet-uss-star-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "starfleet-uss-star-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          7.2
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bridge-to-lagoon",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "bridge-to-lagoon",
+      "label": "Lagoon",
+      "transform": {
+        "position": [
+          -3.4,
+          0,
+          6.6
+        ],
+        "rotation": [
+          0,
+          0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "starfleet-uss-star-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "USS Star · bridge",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "starfleet-uss-star-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/starfleet-uss-star/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "bridge-to-lagoon",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/starfleet-uss-star/lagoon",
+      "label": "Lagoon",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "lagoon"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

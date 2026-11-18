@@ -1,0 +1,640 @@
+{
+  "formatVersion": 1,
+  "id": "orchard",
+  "title": "Orchard room",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Bowls of apples and oranges. A small portal above the fruit answers only to a being like Nakor.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "o-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        0.1,
+        12
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "o-wall-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        4,
+        0.2
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "o-wall-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.2,
+        4,
+        12
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "o-wall-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.2,
+        4,
+        12
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "o-table",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        3.2,
+        0.8,
+        1.4
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.75,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-0",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.1,
+          1.25,
+          -1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-1",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "apple",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.40000000000000013,
+          1.25,
+          -1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-2",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.2999999999999998,
+          1.25,
+          -1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-3",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "apple",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.9999999999999996,
+          1.25,
+          -1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-4",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.1,
+          1.25,
+          -0.7000000000000001
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-5",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "apple",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.40000000000000013,
+          1.25,
+          -0.7000000000000001
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-6",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "orange",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.2999999999999998,
+          1.25,
+          -0.7000000000000001
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "apple-7",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "apple",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.9999999999999996,
+          1.25,
+          -0.7000000000000001
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "basket",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.5,
+        0.35,
+        0.5
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          1.6,
+          0.95,
+          0.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orchard-fruit",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "orchard-fruit",
+      "label": "Oranges",
+      "small": true,
+      "transform": {
+        "position": [
+          0,
+          1.7,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orchard-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "The fruit stays fresh.\nThe small gate is how the oranges get in.\nOnly a being like Nakor can use it.",
+      "style": "wood",
+      "width": 3.6,
+      "height": 1.1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.4,
+          -5.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "o-l",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -4,
+          2.8,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "o-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          4,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          -1,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orchard-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "orchard-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          -4,
+          0,
+          5
+        ],
+        "rotation": [
+          0,
+          0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "orchard-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Orchard room",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          4.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "orchard-fruit",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/orchard/fruit",
+      "label": "Nakor's oranges",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "orchard-sack"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": {
+        "nameIncludes": "nakor"
+      },
+      "onMap": false,
+      "group": null,
+      "subtitle": "Only a being like Nakor",
+      "steps": 1
+    },
+    {
+      "id": "orchard-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/orchard/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

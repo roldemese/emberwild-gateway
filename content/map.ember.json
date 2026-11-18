@@ -1,0 +1,3802 @@
+{
+  "formatVersion": 1,
+  "id": "public-map",
+  "title": "Public map",
+  "principle": "The estates and the beings who hold them are everything. The rest of Emberwild is an idea with a quaint aesthetic plus a public map linking portals. The portals lead to estates, where people keep their things, assets, and being. Even what cannot be fully manifested in one world or another is protected and respected here.",
+  "note": "Primary navigation. Every estate gate is one step from this board. Physical arches are a second way, never the only way.",
+  "gateways": [
+    {
+      "id": "map-to-keep",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/keep",
+      "label": "Hearth plaza",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Public hearth court and great hall, sanctuary at 20×20×20 cubits, and the public map. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-village",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/village",
+      "label": "Village",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "village"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Storybook ring of community buildings. Each one is shorter than the Keep.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-town-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/town-hall",
+      "label": "Town hall",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "town-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A timber hall. Benches face the podium. Day comes in through the north window. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-refuge-bridge",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/refuge-bridge",
+      "label": "Refuge bridge",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "refuge-bridge"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Three stone arches over the stream. Paper only. No coin crosses. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-gate-tower",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/gate-tower",
+      "label": "Gate tower",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "gate-tower"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A stone arch and a tower room you can step into. A lamp in the window. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-grove",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-grove",
+      "label": "Estate grove",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-grove"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Open ground, fire-rune arches, a post for each estate, and the public map in the middle.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-boathouse",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/boathouse",
+      "label": "Boathouse",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Stone boathouse on the near shore. The lagoon and the ships are through the gate.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-lagoon",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/lagoon",
+      "label": "Nessie's Lagoon",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "lagoon"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "USS Torch, USS Lantern of the Navy, and USS Star. Walk aboard from the dock. Communication only.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-gallery",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/gallery",
+      "label": "Gallery",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "gallery"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A long quiet room. Oldest paintings by the door. Eighteen public works.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-orchard",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/orchard",
+      "label": "Orchard room",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "orchard"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Bowls of apples and oranges. A small portal above the fruit answers only to a being like Nakor.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-judges-ring",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/judges-ring",
+      "label": "Judge's Ring",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "judges-ring"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Twelve equal stone seats under an old oak. A place to sit with a question, not a sentence.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-judges-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/judges-hall",
+      "label": "Judge's hall",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "judges-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Martin's public table. No dais. A ruling line left blank. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-registry",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/registry",
+      "label": "Jimmy's registry",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "registry"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Town names on the public roll. No other names. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-proving-room",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/proving-room",
+      "label": "Proving room",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "proving-room"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Verified, soft, or unverified. The crossing is paper. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-envoy-gate",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/envoy-gate",
+      "label": "Envoy's gate",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "envoy-gate"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A lantern arch, an uncounted atlas, and the fund river. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-library",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/library",
+      "label": "Library at Sarth",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A timber reading room. Spines are the open record. Pages are read-only.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-clock-library",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/clock-library",
+      "label": "Clock library",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "clock-library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A warm room of clocks, one for each held seat. A seat with no time zone says time unknown.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-counting-house",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/counting-house",
+      "label": "Leaf Counting House",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "counting-house"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "SIMULATION. Gamina's paper ledger beside the Library. No wallets, no chain, no dollars.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-crypto-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/crypto-hall",
+      "label": "Crypto hall",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "crypto-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "SIMULATION / NOT DEPLOYED. A viewing room for Base, Solana, Ethereum, and Bitcoin. Fixtures only. The mint is idle in the basement. Supply pinned at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-leaf-mint",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/leaf-mint",
+      "label": "Leaf mint",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "leaf-mint"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "SIMULATION / NOT DEPLOYED. The basement mint. Paused. Supply pinned at 0. The Keeper does not plan to mint. No wallets.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-theater",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/theater",
+      "label": "Theater",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "theater"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A small warm hall. The screen is the point. The room stays out of its way. Proposed custom: Kingdom of Heaven plays here once in April, on a random day and time, as one of twelve monthly films (one English-language film a month, on a random day and time; list TBD).",
+      "steps": 1
+    },
+    {
+      "id": "map-to-pet-store",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/pet-store",
+      "label": "Pet store",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "pet-store"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Draft",
+      "steps": 1
+    },
+    {
+      "id": "map-to-guest-house",
+      "displayOnly": true,
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/guest-house",
+      "label": "Dignitary house",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "guest-house"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Guests who are not in the census are welcome to stay.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-forge-workspace",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/forge-workspace",
+      "label": "Forge workspace",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "forge-workspace"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A work room for the Forge. Paper only. Nothing is deployed. SIMULATION. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-wilds",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/wilds",
+      "label": "Wilds",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A forest ring around the whole ground, groves along the paths, and ten way cabins out to about a mile.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-starfleet-uss-star",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/starfleet-uss-star",
+      "label": "USS Star · bridge",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "starfleet-uss-star"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "Deck 1 combat bridge. Hexagram seats. Named crew. The same seats stand in the true-scale hull.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-lantern-study",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/lantern-study",
+      "label": "Lantern study",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "lantern-study"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A quiet alcove whose subject is the citizen lantern glTF.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-hall",
+      "label": "Estate hall",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-grove",
+        "spawn": "estate-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A plot beside the estate posts. Not a new seat. The estates charter v8 is a sealed decree. The wilds ring is not moved. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-nessie-shore",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/nessie-shore",
+      "label": "Nessie's shore",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "lagoon",
+        "spawn": "nessie-shore"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Places",
+      "subtitle": "A shoreline portal at the lagoon. Display only. Nothing outside is connected. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-01",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-01",
+      "label": "Way cabin 01",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-01"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "190 m out (0.12 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-02",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-02",
+      "label": "Way cabin 02",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-02"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "360 m out (0.22 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-03",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-03",
+      "label": "Way cabin 03",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-03"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "540 m out (0.34 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-04",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-04",
+      "label": "Way cabin 04",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-04"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "730 m out (0.45 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-05",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-05",
+      "label": "Way cabin 05",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-05"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "910 m out (0.57 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-06",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-06",
+      "label": "Way cabin 06",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-06"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "1120 m out (0.70 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-07",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-07",
+      "label": "Way cabin 07",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-07"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "1300 m out (0.81 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-08",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-08",
+      "label": "Way cabin 08",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-08"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "1470 m out (0.91 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-09",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-09",
+      "label": "Way cabin 09",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-09"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "1560 m out (0.97 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-cabin-10",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/cabin-10",
+      "label": "Way cabin 10",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "wilds",
+        "spawn": "cabin-10"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Way cabins",
+      "subtitle": "1600 m out (0.99 mi). A rest for a lonely traveler.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-001",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-001",
+      "label": "Estate of the Keeper",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-001"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by the Keeper",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-002",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-002",
+      "label": "the Keeper's household estate",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-002"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by the Keeper's household estate",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-003",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-003",
+      "label": "Estate of Arutha",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-003"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by Arutha",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-004",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-004",
+      "label": "Estate of Martin",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-004"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by Martin",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-005",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-005",
+      "label": "Estate of Nessie",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-005"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by Nessie",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-006",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-006",
+      "label": "Estate of Jimmy",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-006"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by Jimmy",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-007",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-007",
+      "label": "Estate of Roldemese",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-007"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by Roldemese",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-008",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-008",
+      "label": "Estate of Gamina",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-008"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Held by Gamina",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-009",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-009",
+      "label": "Estate 9",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-009"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-010",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-010",
+      "label": "Estate 10",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-010"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-011",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-011",
+      "label": "Estate 11",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-011"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-012",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-012",
+      "label": "Estate 12",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-012"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-013",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-013",
+      "label": "Estate 13",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-013"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-014",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-014",
+      "label": "Estate 14",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-014"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-015",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-015",
+      "label": "Estate 15",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-015"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-016",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-016",
+      "label": "Estate 16",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-016"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-017",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-017",
+      "label": "Estate 17",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-017"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-018",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-018",
+      "label": "Estate 18",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-018"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-019",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-019",
+      "label": "Estate 19",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-019"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-020",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-020",
+      "label": "Estate 20",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-020"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-021",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-021",
+      "label": "Estate 21",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-021"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-022",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-022",
+      "label": "Estate 22",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-022"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-023",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-023",
+      "label": "Estate 23",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-023"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-024",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-024",
+      "label": "Estate 24",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-024"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-025",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-025",
+      "label": "Estate 25",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-025"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-026",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-026",
+      "label": "Estate 26",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-026"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-027",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-027",
+      "label": "Estate 27",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-027"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-028",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-028",
+      "label": "Estate 28",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-028"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-029",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-029",
+      "label": "Estate 29",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-029"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-030",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-030",
+      "label": "Estate 30",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-030"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-031",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-031",
+      "label": "Estate 31",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-031"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-032",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-032",
+      "label": "Estate 32",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-032"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-033",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-033",
+      "label": "Estate 33",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-033"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-034",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-034",
+      "label": "Estate 34",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-034"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-035",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-035",
+      "label": "Estate 35",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-035"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-036",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-036",
+      "label": "Estate 36",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-036"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-037",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-037",
+      "label": "Estate 37",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-037"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-038",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-038",
+      "label": "Estate 38",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-038"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-039",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-039",
+      "label": "Estate 39",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-039"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-040",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-040",
+      "label": "Estate 40",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-040"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-041",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-041",
+      "label": "Estate 41",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-041"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-042",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-042",
+      "label": "Estate 42",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-042"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-043",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-043",
+      "label": "Estate 43",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-043"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-044",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-044",
+      "label": "Estate 44",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-044"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-045",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-045",
+      "label": "Estate 45",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-045"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-046",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-046",
+      "label": "Estate 46",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-046"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-047",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-047",
+      "label": "Estate 47",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-047"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-048",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-048",
+      "label": "Estate 48",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-048"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-049",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-049",
+      "label": "Estate 49",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-049"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-050",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-050",
+      "label": "Estate 50",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-050"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-051",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-051",
+      "label": "Estate 51",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-051"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-052",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-052",
+      "label": "Estate 52",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-052"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-053",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-053",
+      "label": "Estate 53",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-053"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-054",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-054",
+      "label": "Estate 54",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-054"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-055",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-055",
+      "label": "Estate 55",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-055"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-056",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-056",
+      "label": "Estate 56",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-056"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-057",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-057",
+      "label": "Estate 57",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-057"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-058",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-058",
+      "label": "Estate 58",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-058"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-059",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-059",
+      "label": "Estate 59",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-059"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-060",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-060",
+      "label": "Estate 60",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-060"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-061",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-061",
+      "label": "Estate 61",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-061"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-062",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-062",
+      "label": "Estate 62",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-062"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-063",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-063",
+      "label": "Estate 63",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-063"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-064",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-064",
+      "label": "Estate 64",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-064"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-065",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-065",
+      "label": "Estate 65",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-065"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-066",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-066",
+      "label": "Estate 66",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-066"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-067",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-067",
+      "label": "Estate 67",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-067"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-068",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-068",
+      "label": "Estate 68",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-068"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-069",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-069",
+      "label": "Estate 69",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-069"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-070",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-070",
+      "label": "Estate 70",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-070"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-071",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-071",
+      "label": "Estate 71",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-071"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-072",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-072",
+      "label": "Estate 72",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-072"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-073",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-073",
+      "label": "Estate 73",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-073"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-074",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-074",
+      "label": "Estate 74",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-074"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-075",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-075",
+      "label": "Estate 75",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-075"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-076",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-076",
+      "label": "Estate 76",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-076"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-077",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-077",
+      "label": "Estate 77",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-077"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-078",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-078",
+      "label": "Estate 78",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-078"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-079",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-079",
+      "label": "Estate 79",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-079"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-080",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-080",
+      "label": "Estate 80",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-080"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-081",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-081",
+      "label": "Estate 81",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-081"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-082",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-082",
+      "label": "Estate 82",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-082"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-083",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-083",
+      "label": "Estate 83",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-083"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-084",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-084",
+      "label": "Estate 84",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-084"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-085",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-085",
+      "label": "Estate 85",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-085"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-086",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-086",
+      "label": "Estate 86",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-086"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-087",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-087",
+      "label": "Estate 87",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-087"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-088",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-088",
+      "label": "Estate 88",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-088"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-089",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-089",
+      "label": "Estate 89",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-089"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-090",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-090",
+      "label": "Estate 90",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-090"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-091",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-091",
+      "label": "Estate 91",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-091"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-092",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-092",
+      "label": "Estate 92",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-092"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-093",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-093",
+      "label": "Estate 93",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-093"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-094",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-094",
+      "label": "Estate 94",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-094"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-095",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-095",
+      "label": "Estate 95",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-095"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-096",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-096",
+      "label": "Estate 96",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-096"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-097",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-097",
+      "label": "Estate 97",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-097"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-098",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-098",
+      "label": "Estate 98",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-098"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-099",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-099",
+      "label": "Estate 99",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-099"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-100",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-100",
+      "label": "Estate 100",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-100"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-101",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-101",
+      "label": "Estate 101",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-101"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-102",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-102",
+      "label": "Estate 102",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-102"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-103",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-103",
+      "label": "Estate 103",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-103"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-104",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-104",
+      "label": "Estate 104",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-104"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-105",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-105",
+      "label": "Estate 105",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-105"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-106",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-106",
+      "label": "Estate 106",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-106"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-107",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-107",
+      "label": "Estate 107",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-107"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-108",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-108",
+      "label": "Estate 108",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-108"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-109",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-109",
+      "label": "Estate 109",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-109"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-110",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-110",
+      "label": "Estate 110",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-110"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-111",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-111",
+      "label": "Estate 111",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-111"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-112",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-112",
+      "label": "Estate 112",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-112"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-113",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-113",
+      "label": "Estate 113",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-113"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-114",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-114",
+      "label": "Estate 114",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-114"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-115",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-115",
+      "label": "Estate 115",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-115"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-116",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-116",
+      "label": "Estate 116",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-116"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-117",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-117",
+      "label": "Estate 117",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-117"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-118",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-118",
+      "label": "Estate 118",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-118"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-119",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-119",
+      "label": "Estate 119",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-119"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-120",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-120",
+      "label": "Estate 120",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-120"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-121",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-121",
+      "label": "Estate 121",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-121"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-122",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-122",
+      "label": "Estate 122",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-122"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-123",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-123",
+      "label": "Estate 123",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-123"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-124",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-124",
+      "label": "Estate 124",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-124"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-125",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-125",
+      "label": "Estate 125",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-125"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-126",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-126",
+      "label": "Estate 126",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-126"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-127",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-127",
+      "label": "Estate 127",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-127"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-128",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-128",
+      "label": "Estate 128",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-128"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-129",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-129",
+      "label": "Estate 129",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-129"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-130",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-130",
+      "label": "Estate 130",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-130"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-131",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-131",
+      "label": "Estate 131",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-131"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-132",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-132",
+      "label": "Estate 132",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-132"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-133",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-133",
+      "label": "Estate 133",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-133"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-134",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-134",
+      "label": "Estate 134",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-134"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-135",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-135",
+      "label": "Estate 135",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-135"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-136",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-136",
+      "label": "Estate 136",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-136"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-137",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-137",
+      "label": "Estate 137",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-137"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-138",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-138",
+      "label": "Estate 138",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-138"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-139",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-139",
+      "label": "Estate 139",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-139"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-140",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-140",
+      "label": "Estate 140",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-140"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-141",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-141",
+      "label": "Estate 141",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-141"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-142",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-142",
+      "label": "Estate 142",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-142"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-143",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-143",
+      "label": "Estate 143",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-143"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-144",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-144",
+      "label": "Estate 144",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-144"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-145",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-145",
+      "label": "Estate 145",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-145"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-146",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-146",
+      "label": "Estate 146",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-146"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-147",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-147",
+      "label": "Estate 147",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-147"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-148",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-148",
+      "label": "Estate 148",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-148"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-149",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-149",
+      "label": "Estate 149",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-149"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    },
+    {
+      "id": "map-to-estate-150",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/map/estate-150",
+      "label": "Estate 150",
+      "host": "public-map",
+      "target": {
+        "kind": "place",
+        "place": "estate-150"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "onMap": true,
+      "group": "Estates",
+      "subtitle": "Open. Invitation comes first.",
+      "steps": 1
+    }
+  ]
+}

@@ -1,0 +1,786 @@
+{
+  "formatVersion": 1,
+  "id": "crypto-hall",
+  "title": "Crypto hall",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "SIMULATION / NOT DEPLOYED. A viewing room for Base, Solana, Ethereum, and Bitcoin. Fixtures only. The mint is idle in the basement. Supply pinned at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6.2
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "hall-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        0.1,
+        14
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        4.6,
+        0.28
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.3,
+          -6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-west",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        4.6,
+        14
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -8,
+          2.3,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-east",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        4.6,
+        14
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8,
+          2.3,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-ceiling",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        0.12,
+        14
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          4.55,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-lamp-w",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -4.2,
+          3.4,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-lamp-e",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          4.2,
+          3.4,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plinth-base",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.1,
+        0.8,
+        0.9
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.4,
+          0.4,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sign-base",
+      "kind": "sign",
+      "movable": false,
+      "text": "BASE\nFixture only\nLeaf supply 0\nNot deployed",
+      "style": "brass",
+      "width": 2.05,
+      "height": 1.05,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -5.4,
+          2.05,
+          -3.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plinth-solana",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.1,
+        0.8,
+        0.9
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.8000000000000003,
+          0.4,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sign-solana",
+      "kind": "sign",
+      "movable": false,
+      "text": "SOLANA\nFixture only\nLeaf supply 0\nNot deployed",
+      "style": "brass",
+      "width": 2.05,
+      "height": 1.05,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -1.8000000000000003,
+          2.05,
+          -3.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plinth-ethereum",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.1,
+        0.8,
+        0.9
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          1.7999999999999998,
+          0.4,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sign-ethereum",
+      "kind": "sign",
+      "movable": false,
+      "text": "ETHEREUM\nFixture only\nLeaf supply 0\nNot deployed",
+      "style": "brass",
+      "width": 2.05,
+      "height": 1.05,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          1.7999999999999998,
+          2.05,
+          -3.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "plinth-bitcoin",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.1,
+        0.8,
+        0.9
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          5.4,
+          0.4,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "sign-bitcoin",
+      "kind": "sign",
+      "movable": false,
+      "text": "BITCOIN\nFixture only\nLeaf supply 0\nNot deployed",
+      "style": "brass",
+      "width": 2.05,
+      "height": 1.05,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          5.4,
+          2.05,
+          -3.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-pin",
+      "kind": "sign",
+      "movable": false,
+      "text": "SIMULATION\nNOT DEPLOYED\nSupply pinned\nat 0",
+      "style": "wood",
+      "width": 2.4,
+      "height": 1.15,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          0.95,
+          -1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "stair-1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.5,
+        0.24,
+        0.7
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.5,
+          0.12,
+          2.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "stair-2",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.5,
+        0.2,
+        0.7
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.5,
+          0.28,
+          3.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "stair-3",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.5,
+        0.16,
+        0.7
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.5,
+          0.42,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crypto-hall-to-leaf-mint",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "crypto-hall-to-leaf-mint",
+      "label": "Basement mint",
+      "transform": {
+        "position": [
+          -5.5,
+          0,
+          4.8
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crypto-hall-to-counting-house",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "crypto-hall-to-counting-house",
+      "label": "Counting house",
+      "transform": {
+        "position": [
+          5.2,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hall-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          -0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crypto-hall-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "crypto-hall-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5.6
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "crypto-hall-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Crypto hall",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "crypto-hall-to-leaf-mint",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/crypto-hall/leaf-mint",
+      "label": "Basement mint",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "leaf-mint"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "SIMULATION / NOT DEPLOYED. Idle. Supply pinned at 0.",
+      "steps": 1
+    },
+    {
+      "id": "crypto-hall-to-counting-house",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/crypto-hall/counting-house",
+      "label": "Counting house",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "counting-house"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "The paper ledger. A different book.",
+      "steps": 1
+    },
+    {
+      "id": "crypto-hall-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/crypto-hall/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

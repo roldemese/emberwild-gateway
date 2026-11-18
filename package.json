@@ -1,0 +1,36 @@
+{
+  "name": "emberwild",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A modest 3D layer on Emberwild: public map, estate gates, and one presence room per place.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate": "node tools/generate.mjs",
+    "validate": "node tools/validate-world.mjs",
+    "test": "node --test packages/presence/test/*.test.mjs tools/test/*.test.mjs leaf/ledger.test.mjs leaf/lessons.test.mjs leaf/engine-guards.test.mjs leaf/decree-candidate.test.mjs leaf/post-guards.test.mjs world/paper.test.mjs world/round4.test.mjs leaf/mint/pin.test.mjs leaf/mint/world.test.mjs estates/issuance/issue-first-eight.test.mjs estates/issuance/seals-and-books.test.mjs gatekeeper/gatekeeper.test.mjs && node leaf/mint/run-forge.mjs && npm run lint:mint",
+    "test:mint": "node --test leaf/mint/pin.test.mjs leaf/mint/world.test.mjs && node leaf/mint/run-forge.mjs && npm run lint:mint",
+    "lint:mint": "solhint -c leaf/mint/solhint.json \"leaf/mint/src/**/*.sol\" \"leaf/mint/script/**/*.sol\" \"leaf/mint/test/**/*.sol\"",
+    "slither:mint": "cd leaf/mint && slither . --config-file slither.config.json --fail-high",
+    "leaf-sim": "node leaf/sim.mjs",
+    "build": "npm run build -w @emberwild/runtime && node tools/assemble-dist.mjs",
+    "dev": "node tools/dev.mjs",
+    "start": "node tools/serve.mjs",
+    "load-test": "node tools/load-test.mjs",
+    "bench": "node tools/bench.mjs",
+    "export": "node tools/export-place.mjs",
+    "mirrors": "node tools/publish-mirrors.mjs",
+    "typecheck": "tsc -p packages/runtime --noEmit"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "5.2.0",
+    "puppeteer-core": "^23.11.1",
+    "solhint": "5.0.5",
+    "typescript": "^5.6.3"
+  }
+}

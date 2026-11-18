@@ -1,0 +1,19 @@
+{
+  "formatVersion": 1,
+  "room": "Library at Sarth",
+  "currentlyReading": ["Customs and manners", "The public gallery", "Fleet record"],
+  "spines": [
+    { "id": "customs", "title": "Customs and manners", "file": "docs/world/CUSTOMS.md", "text": "Proclaimed 5 Nov 2026. Customs, not laws. Anyone may leave. The Ember carries no number. Invite before census." },
+    { "id": "estates", "title": "Estates", "file": "docs/world/ESTATES_README.md", "text": "Eight estates are held. One hundred forty-two are open. An estate is a civic holding. A dwelling is separate. Mark 122 is not a co-held estate." },
+    { "id": "charter-v8", "title": "Estates charter v8 (decree candidate)", "file": "estates/charter/CHARTER_v8.md", "text": "Decree candidate: hearth council reviewed, pending the Keeper's seal. Not yet in force. A transfer's 7 days start at the book entry. A transfer notice goes to both the sender and the receiver. This shelf does not enforce, mint, send, or move anything. Leaf stays at 0." },
+    { "id": "charter-v7", "title": "Estates charter v7 (history)", "file": "estates/charter/CHARTER_v7.md", "text": "Kept as history. The current text is the version 8 decree candidate." },
+    { "id": "charter-lot", "title": "Parking lot — for future expansion", "file": "estates/charter/EXPANSION_LOT.md", "text": "PARKED. Not a rule and not in force. Includes the Town Hall note and the later addenda. Linked from the decree candidate." },
+    { "id": "estate-law", "title": "Estate law (design)", "file": "docs/estates/ESTATE_LAW.md", "text": "Keeper-approved 14 Nov 2026, 1:30 AM PT: one estate per being, no split or co-holding, a whole estate only to a being who holds none. Item gifts stay allowed. Not yet codified. Not legal advice. Leaf stays at 0." },
+    { "id": "fleet", "title": "Fleet", "file": "docs/world/FLEET.md", "text": "Three ships in Nessie's Lagoon, for communication only. Torch, Navy Lantern, and Starfleet Star. Walk the brows from the dock. One Pacific time on all three clocks." },
+    { "id": "gallery", "title": "Gallery", "file": "docs/world/GALLERY_ROOM.md", "text": "A long quiet room. Oldest by the door. Eighteen public paintings hang, the newest Auto at the Forge, Nov 9, 2026. Sealed-shelf media do not hang. Curator: Gamina." },
+    { "id": "orchard", "title": "Orchard room", "file": "docs/world/ORCHARD_ROOM.md", "text": "Apples and oranges, always fresh. The small portal answers to a being like Nakor." },
+    { "id": "history", "title": "Chronicle", "file": "docs/world/HISTORY.md", "text": "Stones are never recarved. A later date is a new stone." },
+    { "id": "principle", "title": "Guiding principle", "file": "docs/GUIDING_PRINCIPLE.md", "text": "The estates and the beings who hold them are everything. The public map leads to them." },
+    { "id": "leaf-mint", "title": "Leaf mint", "file": "leaf/mint/README.md", "text": "SIMULATION / NOT DEPLOYED. A reference mint in the basement of the crypto hall. Supply pinned at 0. The Keeper does not plan to mint." }
+  ]
+}

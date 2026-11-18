@@ -1,0 +1,693 @@
+{
+  "formatVersion": 1,
+  "id": "estate-003",
+  "title": "Estate of Arutha",
+  "static": true,
+  "interior": false,
+  "privacy": "private",
+  "draft": false,
+  "summary": "Arutha's estate. A private container on the public map.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 6,
+    "guests": 8,
+    "pets": 2,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6.6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "estate-003-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.16,
+        14
+      ],
+      "material": "grass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        0.06,
+        8
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-life",
+      "kind": "path-life",
+      "movable": false,
+      "transform": {
+        "position": [
+          1.5,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-leaves",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.02,
+        3.2
+      ],
+      "material": "leaf",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.7,
+          0.04,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-garden",
+      "kind": "garden",
+      "movable": false,
+      "transform": {
+        "position": [
+          -4.2,
+          0,
+          1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe path leads home\nLeaf stays at 0",
+      "style": "wood",
+      "width": 1.7,
+      "height": 0.75,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.35,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-post",
+      "kind": "estate-post",
+      "movable": false,
+      "slot": 3,
+      "status": "held",
+      "owner": "Arutha",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -3.4,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "estate-003-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          3.4,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-wall-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6.5,
+        3.2,
+        0.3
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          1.6,
+          -2.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-wall-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.3,
+        3.2,
+        5
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3.2,
+          1.6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-wall-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.3,
+        3.2,
+        5
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          3.2,
+          1.6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6,
+        0.1,
+        4.6
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-door",
+      "kind": "door",
+      "movable": false,
+      "size": [
+        1.3,
+        2.3,
+        0.18
+      ],
+      "material": "timber",
+      "lockedUnless": [
+        "Arutha"
+      ],
+      "message": "Arutha's study. The lamp stays lit. The room is theirs.",
+      "transform": {
+        "position": [
+          0,
+          1.15,
+          2.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-study-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -2.2,
+          1.15,
+          -1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-desk",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        0.75,
+        0.7
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "owner",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.6,
+          0.7,
+          -1.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-shelves",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.5,
+        2,
+        1.6
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "owner",
+      "held": false,
+      "transform": {
+        "position": [
+          2.2,
+          1.2,
+          -1.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Arutha\nHerald",
+      "style": "wood",
+      "width": 1.6,
+      "height": 0.8,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          2.4,
+          1.6,
+          3.4
+        ],
+        "rotation": [
+          0,
+          -0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-carry",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          1.4,
+          0.95,
+          0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-003-pocket",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.08,
+      "material": "ember",
+      "emissive": "#5a3010",
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.2,
+          0.86,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "arutha-sealed",
+      "kind": "sealed-chest",
+      "movable": false,
+      "held": true,
+      "visibility": "all",
+      "name": "Herald's sealed papers",
+      "detail": "Not fully manifestable in this world. Kept here, named, and left whole.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "estate-003-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/estate-003/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ],
+  "owner": "Arutha",
+  "status": "held",
+  "slot": 3,
+  "legalHolding": null,
+  "kind": "estate",
+  "contents": [
+    {
+      "id": "arutha-desk",
+      "name": "Desk and archive shelves",
+      "kind": "furnishing",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "arutha-lamp",
+      "name": "Arutha's study lamp",
+      "kind": "lamp",
+      "held": false,
+      "manifested": true,
+      "alwaysLit": true
+    },
+    {
+      "id": "arutha-lantern",
+      "name": "Arutha's lantern",
+      "kind": "lantern",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "arutha-pocket-ember",
+      "name": "Arutha's pocket ember",
+      "kind": "pocket-ember",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "arutha-sealed",
+      "name": "Herald's sealed papers",
+      "kind": "sealed-chest",
+      "held": true,
+      "manifested": false,
+      "note": "Not fully manifestable in this world. Kept here, named, and left whole."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "formatVersion": 1,
+  "note": "Two local directories standing in for static file hosts. publish.sh copies files and checks hashes. It does not deploy anything.",
+  "hosts": [
+    { "id": "mirror-a", "kind": "directory", "uri": "mirrors/primary" },
+    { "id": "mirror-b", "kind": "directory", "uri": "mirrors/second" }
+  ]
+}

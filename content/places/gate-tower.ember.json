@@ -1,0 +1,922 @@
+{
+  "formatVersion": 1,
+  "id": "gate-tower",
+  "title": "Gate tower",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A stone arch and a tower room you can step into. A lamp in the window. Leaf stays at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      12
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "gt-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        40,
+        0.16,
+        36
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-arch-l",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.2,
+        4.8,
+        1.4
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -2.2,
+          2.4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-arch-r",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.2,
+        4.8,
+        1.4
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          2.2,
+          2.4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-lintel",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        5.6,
+        0.8,
+        1.4
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        4.4,
+        0.12,
+        4.4
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6.5,
+          0.08,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        4.9,
+        7.4033999999999995,
+        0.28
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6.5,
+          3.7016999999999998,
+          -3.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        7.4033999999999995,
+        4.9
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.15,
+          3.7016999999999998,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        7.4033999999999995,
+        4.9
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8.85,
+          3.7016999999999998,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-s-a",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.7,
+        7.4033999999999995,
+        0.28
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.95,
+          3.7016999999999998,
+          1.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-s-b",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.7,
+        7.4033999999999995,
+        0.28
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8.05,
+          3.7016999999999998,
+          1.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-sill",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        1.1,
+        0.28
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6.5,
+          0.55,
+          1.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-door-top",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        5.0534,
+        0.28
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6.5,
+          4.8767,
+          1.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-roof",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        5.6,
+        0.5,
+        5.6
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6.5,
+          7.703399999999999,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-set",
+      "kind": "room-set",
+      "set": "tower",
+      "movable": false,
+      "transform": {
+        "position": [
+          6.5,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe tower room is open\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.85,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          1.6,
+          7.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-birds",
+      "kind": "birds",
+      "movable": false,
+      "count": 4,
+      "transform": {
+        "position": [
+          -4,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "tower-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.1,
+        0.8,
+        0.7
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.1,
+          3.2,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "jimmy-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          5.2,
+          2.4,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "scribe-desk",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.3,
+        0.75,
+        0.65
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "owner",
+      "held": false,
+      "transform": {
+        "position": [
+          6.5,
+          0.7,
+          -1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gate-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "VILLAGE GATE",
+      "style": "wood",
+      "width": 2.4,
+      "height": 0.55,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          4.2,
+          1.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "jimmy-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Jimmy\nCensus",
+      "style": "wood",
+      "width": 1.2,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          6.5,
+          2.2,
+          2.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "census-book",
+      "kind": "census-book",
+      "movable": false,
+      "transform": {
+        "position": [
+          -1.4,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "presence-windows",
+      "kind": "presence-windows",
+      "movable": false,
+      "count": 8,
+      "transform": {
+        "position": [
+          4.05,
+          3.4,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gate-snow",
+      "kind": "snow-cap",
+      "movable": false,
+      "size": [
+        5.8,
+        0.16,
+        5.8
+      ],
+      "transform": {
+        "position": [
+          6.5,
+          8.023399999999999,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gate-bell",
+      "kind": "bell",
+      "movable": false,
+      "place": "gate-tower",
+      "transform": {
+        "position": [
+          0,
+          4.5,
+          1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gate-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -6,
+          0,
+          8
+        ],
+        "rotation": [
+          0,
+          0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gate-tower-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "gate-tower-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          14
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-tree--8",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#8b3a1a",
+      "scale": 1,
+      "transform": {
+        "position": [
+          -8,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-tree-8",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#8b3a1a",
+      "scale": 1,
+      "transform": {
+        "position": [
+          8,
+          0,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gt-tree--6",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#8b3a1a",
+      "scale": 1,
+      "transform": {
+        "position": [
+          -6,
+          0,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gate-tower-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Gate tower",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          10.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "gate-tower-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/gate-tower/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "formatVersion": 1,
+  "id": "forge-workspace",
+  "title": "Forge workspace",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A work room for the Forge. Paper only. Nothing is deployed. SIMULATION. Leaf stays at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      5.2
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "fw-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        10,
+        0.1,
+        8
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fw-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        10,
+        4,
+        0.25
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2,
+          -3.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fw-west",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4,
+        8
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4.9,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fw-east",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4,
+        8
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.9,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fw-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          0,
+          2.8,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fw-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "FORGE WORKSPACE\nPaper only\nNothing is deployed\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.8,
+      "height": 1.1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.4,
+          -3.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fw-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          2.4,
+          0,
+          2.6
+        ],
+        "rotation": [
+          0,
+          -0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "forge-workspace-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "forge-workspace-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          4.4
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "forge-workspace-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Forge workspace",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "forge-workspace-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/forge-workspace/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

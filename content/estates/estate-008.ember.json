@@ -1,0 +1,473 @@
+{
+  "formatVersion": 1,
+  "id": "estate-008",
+  "title": "Estate of Gamina",
+  "static": true,
+  "interior": false,
+  "privacy": "private",
+  "draft": false,
+  "summary": "Gamina's estate. A private container on the public map.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 6,
+    "guests": 8,
+    "pets": 2,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6.6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "estate-008-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.16,
+        14
+      ],
+      "material": "grass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        0.06,
+        8
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-life",
+      "kind": "path-life",
+      "movable": false,
+      "transform": {
+        "position": [
+          1.5,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-leaves",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.02,
+        3.2
+      ],
+      "material": "leaf",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.7,
+          0.04,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-garden",
+      "kind": "garden",
+      "movable": false,
+      "transform": {
+        "position": [
+          -4.2,
+          0,
+          1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe path leads home\nLeaf stays at 0",
+      "style": "wood",
+      "width": 1.7,
+      "height": 0.75,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.35,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-post",
+      "kind": "estate-post",
+      "movable": false,
+      "slot": 8,
+      "status": "held",
+      "owner": "Gamina",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -3.4,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "estate-008-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          3.4,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Gamina\nEstate held\nDwelling pending",
+      "style": "wood",
+      "width": 1.5,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.2,
+          1.5,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-bench",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.4,
+        0.5
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.4,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-carry",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          1.4,
+          0.95,
+          0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-008-pocket",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.08,
+      "material": "ember",
+      "emissive": "#5a3010",
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.2,
+          0.86,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gamina-sealed",
+      "kind": "sealed-lantern",
+      "movable": false,
+      "held": true,
+      "visibility": "all",
+      "name": "Dwelling not yet placed",
+      "detail": "Not fully manifestable in this world. Kept here, named, and left whole.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "estate-008-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/estate-008/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ],
+  "owner": "Gamina",
+  "status": "held",
+  "slot": 8,
+  "legalHolding": null,
+  "kind": "estate",
+  "contents": [
+    {
+      "id": "gamina-bench",
+      "name": "A reading bench",
+      "kind": "furnishing",
+      "held": false,
+      "manifested": true,
+      "note": "Gamina holds the estate. A dwelling on the map is still pending."
+    },
+    {
+      "id": "gamina-lantern",
+      "name": "Gamina's lantern",
+      "kind": "lantern",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "gamina-pocket-ember",
+      "name": "Gamina's pocket ember",
+      "kind": "pocket-ember",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "gamina-sealed",
+      "name": "Dwelling not yet placed",
+      "kind": "sealed-lantern",
+      "held": true,
+      "manifested": false,
+      "note": "Not fully manifestable in this world. Kept here, named, and left whole."
+    }
+  ]
+}

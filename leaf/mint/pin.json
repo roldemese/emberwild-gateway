@@ -1,0 +1,23 @@
+{
+  "label": "SIMULATION / NOT DEPLOYED",
+  "keeperPlansToMint": false,
+  "pinnedSupply": 0,
+  "mintPaused": true,
+  "pinEngaged": true,
+  "deployed": false,
+  "localChainId": 31337,
+  "name": "Leaf",
+  "symbol": "LEAF",
+  "decimals": 18,
+  "hardCapWholeTokens": "150000",
+  "minDelaySeconds": 604800,
+  "signatureWindowSeconds": 2592000,
+  "councilThreshold": 3,
+  "councilSize": 5,
+  "openzeppelin": "5.2.0",
+  "forgeStd": "1.17.0",
+  "solc": "0.8.28",
+  "solhint": "5.0.5",
+  "slither": "0.11.3",
+  "note": "Reference contracts are idle. Nothing is deployed. No wallet is connected. The counting-house paper ledger is a different book and does not credit this mint."
+}

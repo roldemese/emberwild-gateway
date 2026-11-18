@@ -1,0 +1,879 @@
+{
+  "formatVersion": 1,
+  "id": "library",
+  "title": "Library at Sarth",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A timber reading room. Spines are the open record. Pages are read-only.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "lib-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.1,
+        16
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        4.8,
+        0.25
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.4,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4.8,
+        16
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -7,
+          2.4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4.8,
+        16
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          7,
+          2.4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shelf-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.5,
+        3.2,
+        8
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6.2,
+          1.8,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "shelf-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.5,
+        3.2,
+        8
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6.2,
+          1.8,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ladder",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.5,
+        3.2,
+        0.08
+      ],
+      "material": "timber",
+      "transform": {
+        "position": [
+          -5.6,
+          1.6,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-green-1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "green",
+      "transform": {
+        "position": [
+          -3,
+          3.2,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-green-2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "green",
+      "transform": {
+        "position": [
+          3,
+          3.2,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lectern",
+      "kind": "lectern",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "guestbook",
+      "kind": "guestbook",
+      "movable": false,
+      "transform": {
+        "position": [
+          3.2,
+          0,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        1.4,
+        0.08
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.6,
+          -7.85
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "heron-reed",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.2,
+        0.7,
+        0.5
+      ],
+      "material": "moss",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          1.2,
+          0.4,
+          -9.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "LIBRARY AT SARTH\nOpen record, read only",
+      "style": "wood",
+      "width": 3,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          3.2,
+          -7.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-ceiling",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.14,
+        16
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          4.7,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-beam",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.3,
+        0.28,
+        14
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          4.35,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-rug",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        3.2,
+        0.03,
+        2.4
+      ],
+      "material": "cloth",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          1.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-table",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.1,
+        1.05
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.74,
+          2.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-bench",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        0.1,
+        0.36
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.42,
+          3.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-window-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          0,
+          2.15,
+          -6.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nRead. Do not recarve.\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.4,
+      "height": 0.85,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          1.55,
+          4.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-gifts",
+      "kind": "companion-room",
+      "set": "library",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-dust",
+      "kind": "dust",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          1.5,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lib-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -3,
+          0,
+          5
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "library-to-clocks",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "library-to-clocks",
+      "label": "Clock library",
+      "transform": {
+        "position": [
+          -4.2,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "library-to-counting-house",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "library-to-counting-house",
+      "label": "Leaf Counting House",
+      "transform": {
+        "position": [
+          4.2,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          -0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "library-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "library-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          3,
+          0,
+          6.2
+        ],
+        "rotation": [
+          0,
+          -0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "library-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Library at Sarth",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          4.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "library-to-clocks",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/library/clock-library",
+      "label": "Clock library",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "clock-library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Local time for each held seat",
+      "steps": 1
+    },
+    {
+      "id": "library-to-counting-house",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/library/counting-house",
+      "label": "Leaf Counting House",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "counting-house"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "SIMULATION. Paper ledger.",
+      "steps": 1
+    },
+    {
+      "id": "library-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/library/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "formatVersion": 1,
+  "id": "pet-store",
+  "title": "Pet store",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": true,
+  "summary": "Draft. A room where pets might gather. Not proclaimed.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      5
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "ps-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        0.1,
+        12
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ps-counter",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        4,
+        1.2,
+        0.8
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.6,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bowl-1",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.18,
+      "material": "clay",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.2,
+          1.25,
+          -2.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bowl-2",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.18,
+      "material": "clay",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          1.2,
+          1.25,
+          -2.7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cushion",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        0.3,
+        1.4
+      ],
+      "material": "cloth",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3,
+          0.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cushion-2",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.2,
+        0.25,
+        1.2
+      ],
+      "material": "cloth",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          3,
+          0.2,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ps-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "PET STORE\nProposed\nNot yet read at the bell",
+      "style": "draft",
+      "width": 2.8,
+      "height": 1.1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -4.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ps-l",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          0,
+          2.6,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ps-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          3.5,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          -0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pet-store-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "pet-store-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          -3.5,
+          0,
+          4.5
+        ],
+        "rotation": [
+          0,
+          0.7,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "pet-store-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Pet store",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          3.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "pet-store-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/pet-store/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

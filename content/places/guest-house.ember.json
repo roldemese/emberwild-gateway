@@ -1,0 +1,206 @@
+{
+  "formatVersion": 1,
+  "id": "guest-house",
+  "title": "Dignitary house",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Guests who are not in the census are welcome to stay.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      8.4
+    ],
+    "yaw": 0
+  },
+  "spawns": {
+    "exterior": {
+      "position": [
+        4,
+        0,
+        20
+      ],
+      "yaw": 0
+    },
+    "oval": {
+      "position": [
+        -15.2,
+        0,
+        -0.4
+      ],
+      "yaw": 0
+    },
+    "ballroom": {
+      "position": [
+        16,
+        0,
+        0
+      ],
+      "yaw": 1.5707963267948966
+    },
+    "avatar": {
+      "position": [
+        0,
+        0,
+        2.15
+      ],
+      "yaw": 0.15
+    }
+  },
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "gh-manor",
+      "kind": "guest-manor",
+      "movable": false,
+      "reference": "public",
+      "wings": {
+        "oval": "gold",
+        "ballroom": "east"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gh-life",
+      "kind": "room-set",
+      "set": "guest",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          2.15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "gh-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "DIGNITARY HOUSE\nGuests are welcome to stay",
+      "style": "wood",
+      "width": 3,
+      "height": 0.8,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          4.6,
+          5.86
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "guest-book",
+      "kind": "sign",
+      "movable": false,
+      "text": "Guest book\nA line, not a wallet",
+      "style": "wood",
+      "width": 1.8,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.35,
+          3.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "guest-house-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Dignitary house",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          7.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [],
+  "instances": "per-guest"
+}

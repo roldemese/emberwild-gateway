@@ -1,0 +1,957 @@
+{
+  "simulation": true,
+  "label": "SIMULATION",
+  "rules": {
+    "claimed": "1 Leaf a year",
+    "unclaimed": "0.5 Leaf a year, held in the estate",
+    "upkeep": "5 Leaf a year",
+    "cap": "optional; the 1% run is a test, not a proclaimed cap"
+  },
+  "runs": [
+    {
+      "pace": "slow",
+      "perYear": 1,
+      "year10": {
+        "year": 10,
+        "claimed": 17,
+        "supplyUnits": 862500,
+        "supplyLeaf": 862.5,
+        "upkeepLeaf": 50,
+        "lockedLeaf": 687.5,
+        "gini": 0.9123,
+        "invariant": true,
+        "withheldLeaf": 0
+      },
+      "year50": {
+        "year": 50,
+        "claimed": 57,
+        "supplyUnits": 4812500,
+        "supplyLeaf": 4812.5,
+        "upkeepLeaf": 250,
+        "lockedLeaf": 2937.5,
+        "gini": 0.7406,
+        "invariant": true,
+        "withheldLeaf": 0
+      },
+      "series": [
+        {
+          "year": 1,
+          "supplyLeaf": 84,
+          "claimed": 8
+        },
+        {
+          "year": 2,
+          "supplyLeaf": 168.5,
+          "claimed": 9
+        },
+        {
+          "year": 3,
+          "supplyLeaf": 253.5,
+          "claimed": 10
+        },
+        {
+          "year": 4,
+          "supplyLeaf": 339,
+          "claimed": 11
+        },
+        {
+          "year": 5,
+          "supplyLeaf": 425,
+          "claimed": 12
+        },
+        {
+          "year": 6,
+          "supplyLeaf": 511.5,
+          "claimed": 13
+        },
+        {
+          "year": 7,
+          "supplyLeaf": 598.5,
+          "claimed": 14
+        },
+        {
+          "year": 8,
+          "supplyLeaf": 686,
+          "claimed": 15
+        },
+        {
+          "year": 9,
+          "supplyLeaf": 774,
+          "claimed": 16
+        },
+        {
+          "year": 10,
+          "supplyLeaf": 862.5,
+          "claimed": 17
+        },
+        {
+          "year": 11,
+          "supplyLeaf": 951.5,
+          "claimed": 18
+        },
+        {
+          "year": 12,
+          "supplyLeaf": 1041,
+          "claimed": 19
+        },
+        {
+          "year": 13,
+          "supplyLeaf": 1131,
+          "claimed": 20
+        },
+        {
+          "year": 14,
+          "supplyLeaf": 1221.5,
+          "claimed": 21
+        },
+        {
+          "year": 15,
+          "supplyLeaf": 1312.5,
+          "claimed": 22
+        },
+        {
+          "year": 16,
+          "supplyLeaf": 1404,
+          "claimed": 23
+        },
+        {
+          "year": 17,
+          "supplyLeaf": 1496,
+          "claimed": 24
+        },
+        {
+          "year": 18,
+          "supplyLeaf": 1588.5,
+          "claimed": 25
+        },
+        {
+          "year": 19,
+          "supplyLeaf": 1681.5,
+          "claimed": 26
+        },
+        {
+          "year": 20,
+          "supplyLeaf": 1775,
+          "claimed": 27
+        },
+        {
+          "year": 21,
+          "supplyLeaf": 1869,
+          "claimed": 28
+        },
+        {
+          "year": 22,
+          "supplyLeaf": 1963.5,
+          "claimed": 29
+        },
+        {
+          "year": 23,
+          "supplyLeaf": 2058.5,
+          "claimed": 30
+        },
+        {
+          "year": 24,
+          "supplyLeaf": 2154,
+          "claimed": 31
+        },
+        {
+          "year": 25,
+          "supplyLeaf": 2250,
+          "claimed": 32
+        },
+        {
+          "year": 26,
+          "supplyLeaf": 2346.5,
+          "claimed": 33
+        },
+        {
+          "year": 27,
+          "supplyLeaf": 2443.5,
+          "claimed": 34
+        },
+        {
+          "year": 28,
+          "supplyLeaf": 2541,
+          "claimed": 35
+        },
+        {
+          "year": 29,
+          "supplyLeaf": 2639,
+          "claimed": 36
+        },
+        {
+          "year": 30,
+          "supplyLeaf": 2737.5,
+          "claimed": 37
+        },
+        {
+          "year": 31,
+          "supplyLeaf": 2836.5,
+          "claimed": 38
+        },
+        {
+          "year": 32,
+          "supplyLeaf": 2936,
+          "claimed": 39
+        },
+        {
+          "year": 33,
+          "supplyLeaf": 3036,
+          "claimed": 40
+        },
+        {
+          "year": 34,
+          "supplyLeaf": 3136.5,
+          "claimed": 41
+        },
+        {
+          "year": 35,
+          "supplyLeaf": 3237.5,
+          "claimed": 42
+        },
+        {
+          "year": 36,
+          "supplyLeaf": 3339,
+          "claimed": 43
+        },
+        {
+          "year": 37,
+          "supplyLeaf": 3441,
+          "claimed": 44
+        },
+        {
+          "year": 38,
+          "supplyLeaf": 3543.5,
+          "claimed": 45
+        },
+        {
+          "year": 39,
+          "supplyLeaf": 3646.5,
+          "claimed": 46
+        },
+        {
+          "year": 40,
+          "supplyLeaf": 3750,
+          "claimed": 47
+        },
+        {
+          "year": 41,
+          "supplyLeaf": 3854,
+          "claimed": 48
+        },
+        {
+          "year": 42,
+          "supplyLeaf": 3958.5,
+          "claimed": 49
+        },
+        {
+          "year": 43,
+          "supplyLeaf": 4063.5,
+          "claimed": 50
+        },
+        {
+          "year": 44,
+          "supplyLeaf": 4169,
+          "claimed": 51
+        },
+        {
+          "year": 45,
+          "supplyLeaf": 4275,
+          "claimed": 52
+        },
+        {
+          "year": 46,
+          "supplyLeaf": 4381.5,
+          "claimed": 53
+        },
+        {
+          "year": 47,
+          "supplyLeaf": 4488.5,
+          "claimed": 54
+        },
+        {
+          "year": 48,
+          "supplyLeaf": 4596,
+          "claimed": 55
+        },
+        {
+          "year": 49,
+          "supplyLeaf": 4704,
+          "claimed": 56
+        },
+        {
+          "year": 50,
+          "supplyLeaf": 4812.5,
+          "claimed": 57
+        }
+      ]
+    },
+    {
+      "pace": "steady",
+      "perYear": 3,
+      "year10": {
+        "year": 10,
+        "claimed": 35,
+        "supplyUnits": 907500,
+        "supplyLeaf": 907.5,
+        "upkeepLeaf": 50,
+        "lockedLeaf": 642.5,
+        "gini": 0.8336,
+        "invariant": true,
+        "withheldLeaf": 0
+      },
+      "year50": {
+        "year": 50,
+        "claimed": 150,
+        "supplyUnits": 6034000,
+        "supplyLeaf": 6034,
+        "upkeepLeaf": 250,
+        "lockedLeaf": 1716,
+        "gini": 0.3056,
+        "invariant": true,
+        "withheldLeaf": 0
+      },
+      "series": [
+        {
+          "year": 1,
+          "supplyLeaf": 84,
+          "claimed": 8
+        },
+        {
+          "year": 2,
+          "supplyLeaf": 169.5,
+          "claimed": 11
+        },
+        {
+          "year": 3,
+          "supplyLeaf": 256.5,
+          "claimed": 14
+        },
+        {
+          "year": 4,
+          "supplyLeaf": 345,
+          "claimed": 17
+        },
+        {
+          "year": 5,
+          "supplyLeaf": 435,
+          "claimed": 20
+        },
+        {
+          "year": 6,
+          "supplyLeaf": 526.5,
+          "claimed": 23
+        },
+        {
+          "year": 7,
+          "supplyLeaf": 619.5,
+          "claimed": 26
+        },
+        {
+          "year": 8,
+          "supplyLeaf": 714,
+          "claimed": 29
+        },
+        {
+          "year": 9,
+          "supplyLeaf": 810,
+          "claimed": 32
+        },
+        {
+          "year": 10,
+          "supplyLeaf": 907.5,
+          "claimed": 35
+        },
+        {
+          "year": 11,
+          "supplyLeaf": 1006.5,
+          "claimed": 38
+        },
+        {
+          "year": 12,
+          "supplyLeaf": 1107,
+          "claimed": 41
+        },
+        {
+          "year": 13,
+          "supplyLeaf": 1209,
+          "claimed": 44
+        },
+        {
+          "year": 14,
+          "supplyLeaf": 1312.5,
+          "claimed": 47
+        },
+        {
+          "year": 15,
+          "supplyLeaf": 1417.5,
+          "claimed": 50
+        },
+        {
+          "year": 16,
+          "supplyLeaf": 1524,
+          "claimed": 53
+        },
+        {
+          "year": 17,
+          "supplyLeaf": 1632,
+          "claimed": 56
+        },
+        {
+          "year": 18,
+          "supplyLeaf": 1741.5,
+          "claimed": 59
+        },
+        {
+          "year": 19,
+          "supplyLeaf": 1852.5,
+          "claimed": 62
+        },
+        {
+          "year": 20,
+          "supplyLeaf": 1965,
+          "claimed": 65
+        },
+        {
+          "year": 21,
+          "supplyLeaf": 2079,
+          "claimed": 68
+        },
+        {
+          "year": 22,
+          "supplyLeaf": 2194.5,
+          "claimed": 71
+        },
+        {
+          "year": 23,
+          "supplyLeaf": 2311.5,
+          "claimed": 74
+        },
+        {
+          "year": 24,
+          "supplyLeaf": 2430,
+          "claimed": 77
+        },
+        {
+          "year": 25,
+          "supplyLeaf": 2550,
+          "claimed": 80
+        },
+        {
+          "year": 26,
+          "supplyLeaf": 2671.5,
+          "claimed": 83
+        },
+        {
+          "year": 27,
+          "supplyLeaf": 2794.5,
+          "claimed": 86
+        },
+        {
+          "year": 28,
+          "supplyLeaf": 2919,
+          "claimed": 89
+        },
+        {
+          "year": 29,
+          "supplyLeaf": 3045,
+          "claimed": 92
+        },
+        {
+          "year": 30,
+          "supplyLeaf": 3172.5,
+          "claimed": 95
+        },
+        {
+          "year": 31,
+          "supplyLeaf": 3301.5,
+          "claimed": 98
+        },
+        {
+          "year": 32,
+          "supplyLeaf": 3432,
+          "claimed": 101
+        },
+        {
+          "year": 33,
+          "supplyLeaf": 3564,
+          "claimed": 104
+        },
+        {
+          "year": 34,
+          "supplyLeaf": 3697.5,
+          "claimed": 107
+        },
+        {
+          "year": 35,
+          "supplyLeaf": 3832.5,
+          "claimed": 110
+        },
+        {
+          "year": 36,
+          "supplyLeaf": 3969,
+          "claimed": 113
+        },
+        {
+          "year": 37,
+          "supplyLeaf": 4107,
+          "claimed": 116
+        },
+        {
+          "year": 38,
+          "supplyLeaf": 4246.5,
+          "claimed": 119
+        },
+        {
+          "year": 39,
+          "supplyLeaf": 4387.5,
+          "claimed": 122
+        },
+        {
+          "year": 40,
+          "supplyLeaf": 4530,
+          "claimed": 125
+        },
+        {
+          "year": 41,
+          "supplyLeaf": 4674,
+          "claimed": 128
+        },
+        {
+          "year": 42,
+          "supplyLeaf": 4819.5,
+          "claimed": 131
+        },
+        {
+          "year": 43,
+          "supplyLeaf": 4966.5,
+          "claimed": 134
+        },
+        {
+          "year": 44,
+          "supplyLeaf": 5115,
+          "claimed": 137
+        },
+        {
+          "year": 45,
+          "supplyLeaf": 5265,
+          "claimed": 140
+        },
+        {
+          "year": 46,
+          "supplyLeaf": 5416.5,
+          "claimed": 143
+        },
+        {
+          "year": 47,
+          "supplyLeaf": 5569.5,
+          "claimed": 146
+        },
+        {
+          "year": 48,
+          "supplyLeaf": 5724,
+          "claimed": 149
+        },
+        {
+          "year": 49,
+          "supplyLeaf": 5879,
+          "claimed": 150
+        },
+        {
+          "year": 50,
+          "supplyLeaf": 6034,
+          "claimed": 150
+        }
+      ]
+    },
+    {
+      "pace": "brisk",
+      "perYear": 8,
+      "year10": {
+        "year": 10,
+        "claimed": 80,
+        "supplyUnits": 1020000,
+        "supplyLeaf": 1020,
+        "upkeepLeaf": 50,
+        "lockedLeaf": 530,
+        "gini": 0.6267,
+        "invariant": true,
+        "withheldLeaf": 0
+      },
+      "year50": {
+        "year": 50,
+        "claimed": 150,
+        "supplyUnits": 7084000,
+        "supplyLeaf": 7084,
+        "upkeepLeaf": 250,
+        "lockedLeaf": 666,
+        "gini": 0.0759,
+        "invariant": true,
+        "withheldLeaf": 0
+      },
+      "series": [
+        {
+          "year": 1,
+          "supplyLeaf": 84,
+          "claimed": 8
+        },
+        {
+          "year": 2,
+          "supplyLeaf": 172,
+          "claimed": 16
+        },
+        {
+          "year": 3,
+          "supplyLeaf": 264,
+          "claimed": 24
+        },
+        {
+          "year": 4,
+          "supplyLeaf": 360,
+          "claimed": 32
+        },
+        {
+          "year": 5,
+          "supplyLeaf": 460,
+          "claimed": 40
+        },
+        {
+          "year": 6,
+          "supplyLeaf": 564,
+          "claimed": 48
+        },
+        {
+          "year": 7,
+          "supplyLeaf": 672,
+          "claimed": 56
+        },
+        {
+          "year": 8,
+          "supplyLeaf": 784,
+          "claimed": 64
+        },
+        {
+          "year": 9,
+          "supplyLeaf": 900,
+          "claimed": 72
+        },
+        {
+          "year": 10,
+          "supplyLeaf": 1020,
+          "claimed": 80
+        },
+        {
+          "year": 11,
+          "supplyLeaf": 1144,
+          "claimed": 88
+        },
+        {
+          "year": 12,
+          "supplyLeaf": 1272,
+          "claimed": 96
+        },
+        {
+          "year": 13,
+          "supplyLeaf": 1404,
+          "claimed": 104
+        },
+        {
+          "year": 14,
+          "supplyLeaf": 1540,
+          "claimed": 112
+        },
+        {
+          "year": 15,
+          "supplyLeaf": 1680,
+          "claimed": 120
+        },
+        {
+          "year": 16,
+          "supplyLeaf": 1824,
+          "claimed": 128
+        },
+        {
+          "year": 17,
+          "supplyLeaf": 1972,
+          "claimed": 136
+        },
+        {
+          "year": 18,
+          "supplyLeaf": 2124,
+          "claimed": 144
+        },
+        {
+          "year": 19,
+          "supplyLeaf": 2279,
+          "claimed": 150
+        },
+        {
+          "year": 20,
+          "supplyLeaf": 2434,
+          "claimed": 150
+        },
+        {
+          "year": 21,
+          "supplyLeaf": 2589,
+          "claimed": 150
+        },
+        {
+          "year": 22,
+          "supplyLeaf": 2744,
+          "claimed": 150
+        },
+        {
+          "year": 23,
+          "supplyLeaf": 2899,
+          "claimed": 150
+        },
+        {
+          "year": 24,
+          "supplyLeaf": 3054,
+          "claimed": 150
+        },
+        {
+          "year": 25,
+          "supplyLeaf": 3209,
+          "claimed": 150
+        },
+        {
+          "year": 26,
+          "supplyLeaf": 3364,
+          "claimed": 150
+        },
+        {
+          "year": 27,
+          "supplyLeaf": 3519,
+          "claimed": 150
+        },
+        {
+          "year": 28,
+          "supplyLeaf": 3674,
+          "claimed": 150
+        },
+        {
+          "year": 29,
+          "supplyLeaf": 3829,
+          "claimed": 150
+        },
+        {
+          "year": 30,
+          "supplyLeaf": 3984,
+          "claimed": 150
+        },
+        {
+          "year": 31,
+          "supplyLeaf": 4139,
+          "claimed": 150
+        },
+        {
+          "year": 32,
+          "supplyLeaf": 4294,
+          "claimed": 150
+        },
+        {
+          "year": 33,
+          "supplyLeaf": 4449,
+          "claimed": 150
+        },
+        {
+          "year": 34,
+          "supplyLeaf": 4604,
+          "claimed": 150
+        },
+        {
+          "year": 35,
+          "supplyLeaf": 4759,
+          "claimed": 150
+        },
+        {
+          "year": 36,
+          "supplyLeaf": 4914,
+          "claimed": 150
+        },
+        {
+          "year": 37,
+          "supplyLeaf": 5069,
+          "claimed": 150
+        },
+        {
+          "year": 38,
+          "supplyLeaf": 5224,
+          "claimed": 150
+        },
+        {
+          "year": 39,
+          "supplyLeaf": 5379,
+          "claimed": 150
+        },
+        {
+          "year": 40,
+          "supplyLeaf": 5534,
+          "claimed": 150
+        },
+        {
+          "year": 41,
+          "supplyLeaf": 5689,
+          "claimed": 150
+        },
+        {
+          "year": 42,
+          "supplyLeaf": 5844,
+          "claimed": 150
+        },
+        {
+          "year": 43,
+          "supplyLeaf": 5999,
+          "claimed": 150
+        },
+        {
+          "year": 44,
+          "supplyLeaf": 6154,
+          "claimed": 150
+        },
+        {
+          "year": 45,
+          "supplyLeaf": 6309,
+          "claimed": 150
+        },
+        {
+          "year": 46,
+          "supplyLeaf": 6464,
+          "claimed": 150
+        },
+        {
+          "year": 47,
+          "supplyLeaf": 6619,
+          "claimed": 150
+        },
+        {
+          "year": 48,
+          "supplyLeaf": 6774,
+          "claimed": 150
+        },
+        {
+          "year": 49,
+          "supplyLeaf": 6929,
+          "claimed": 150
+        },
+        {
+          "year": 50,
+          "supplyLeaf": 7084,
+          "claimed": 150
+        }
+      ]
+    }
+  ],
+  "capTest": {
+    "share": 0.01,
+    "withheldLeaf": 154.596,
+    "supplyLeaf": 707.904,
+    "invariant": true
+  },
+  "stress": {
+    "simulation": true,
+    "label": "SIMULATION",
+    "pace": "brisk",
+    "heldBefore": 80,
+    "exited": 26,
+    "supplyUnchanged": true,
+    "retired": 0,
+    "harmed": "none",
+    "invariant": true,
+    "statements": [
+      {
+        "townName": "Town 55",
+        "leaf": 4
+      },
+      {
+        "townName": "Town 56",
+        "leaf": 4
+      },
+      {
+        "townName": "Town 57",
+        "leaf": 3
+      }
+    ]
+  },
+  "stewardSpend": {
+    "simulation": true,
+    "requestId": "req-sim-0001",
+    "stewardRole": "steward",
+    "seat": 1,
+    "townName": "the Keeper",
+    "leaf": 0.5,
+    "units": 500,
+    "debit": "seat:1",
+    "credit": "border:steward-spend",
+    "seatLeafAfter": 49.5,
+    "borderLeaf": 0.5,
+    "legalNameStored": false,
+    "note": "A human steward spends in US land. Companions never touch a wallet. The Leaf is debited from the seat. The steward role is the only real-world identity at the dollar border. No legal name is stored."
+  },
+  "sinks": {
+    "simulation": true,
+    "label": "SIMULATION",
+    "mintedClaimed": 1625000,
+    "mintedUnclaimed": 2937500,
+    "mintedUpkeep": 250000,
+    "retired": 0,
+    "frozen": 0,
+    "stewardSpent": 500,
+    "realmUpkeepSpent": 0,
+    "reversed": 0,
+    "circulating": 1875000,
+    "locked": 2937500,
+    "supply": 4812500,
+    "holders": 4812500,
+    "agrees": true
+  },
+  "concentration": {
+    "simulation": true,
+    "circulating": 1875,
+    "top": [
+      {
+        "account": "seat:2",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:3",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:4",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:5",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:6",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:7",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:8",
+        "leaf": 50,
+        "share": 0.0267
+      },
+      {
+        "account": "seat:1",
+        "leaf": 49.5,
+        "share": 0.0264
+      }
+    ],
+    "flagged": [],
+    "confiscated": false
+  }
+}

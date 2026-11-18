@@ -1,0 +1,44 @@
+name: mint-static
+
+on:
+  push:
+    paths:
+      - "leaf/mint/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/mint-static.yml"
+  pull_request:
+    paths:
+      - "leaf/mint/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/mint-static.yml"
+
+jobs:
+  solhint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run lint:mint
+
+  slither:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: foundry-rs/foundry-toolchain@v1
+      - run: pip install slither-analyzer==0.11.3
+      - run: npm ci
+      - run: slither . --config-file slither.config.json --fail-high
+        working-directory: leaf/mint

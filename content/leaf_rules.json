@@ -1,0 +1,28 @@
+{
+  "simulation": true,
+  "label": "SIMULATION",
+  "status": "PROPOSED",
+  "note": "Paper only. No wallets, no chain, no USDC, no real money. A rule change takes effect from the next period and is never retroactive.",
+  "unitThousandths": 1000,
+  "genesis": "0🍂",
+  "seatMin": 1,
+  "seatMax": 150,
+  "guestsHold": false,
+  "petsHold": false,
+  "preMine": 0,
+  "founderBonus": 0,
+  "apy": 0,
+  "holderCapShare": null,
+  "books": ["leaf", "paper-dollar-reserve", "census"],
+  "schedule": [
+    {
+      "fromYear": 1,
+      "claimedPerYear": 1000,
+      "unclaimedPerYear": 500,
+      "upkeepPerYear": 5000
+    }
+  ],
+  "upkeepAccount": "keep:upkeep",
+  "exit": "leaver keeps their Leaf; the estate returns to the unclaimed mint",
+  "disputes": "frozen, never burned"
+}

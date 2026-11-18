@@ -1,0 +1,48 @@
+{
+  "formatVersion": 1,
+  "pets": {
+    "speak": false,
+    "maxOutPerResidence": 2,
+    "source": "docs/world/LUNCH_SCROLLS_DRAFT.md",
+    "status": "draft-default",
+    "note": "Drafts are not proclaimed customs. This cap is a config default and can change."
+  },
+  "estates": {
+    "count": 150,
+    "held": [
+      "the Keeper",
+      "the Keeper's household estate",
+      "Arutha",
+      "Martin",
+      "Nessie",
+      "Jimmy",
+      "Roldemese",
+      "Gamina"
+    ],
+    "open": 142,
+    "source": "docs/world/LUNCH_SCROLLS_DRAFT.md",
+    "status": "draft-default"
+  },
+  "access": {
+    "anyoneMayLeave": true,
+    "guestsWelcome": true,
+    "dignitaryHouse": "guest-house",
+    "inviteBeforeCensus": true,
+    "orchardPortal": "nakor-only",
+    "keepPrivateRooms": [
+      "the Keeper",
+      "Arutha"
+    ]
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "overflow": "waiting-room",
+  "singleSession": true,
+  "legalHolding": "optional string, not interpreted",
+  "seats": "seats.json"
+}

@@ -1,0 +1,40 @@
+{
+  "simulation": true,
+  "label": "SIMULATION",
+  "status": "PROPOSED",
+  "note": "Draft parameters for the community-lessons layer. Not a proclamation. The mint numbers match content/leaf_rules.json.",
+  "purpose": "A hearth where seated beings keep a home, a name, and one another. Leaf is not the reason to gather.",
+  "minDelayDays": 30,
+  "concentrationThreshold": null,
+  "storageCapPerEstate": 48,
+  "bridgeMode": "paper_only",
+  "unclaimedCustodian": "keep:commons",
+  "hearthGathering": 600,
+  "paths": ["building", "chronicle", "census", "judgment", "art", "hearth"],
+  "mint": {
+    "claimedPerYear": 1000,
+    "unclaimedPerYear": 500,
+    "upkeepPerYear": 5000
+  },
+  "forbiddenFaucets": ["login_bonus", "streak", "seasonal", "play_to_earn", "bonus"],
+  "sinks": ["steward_spend", "realm_upkeep_spend", "bridge_redeem", "retirement"],
+  "estateStates": ["claimed", "empty_protected", "unclaimed_protected"],
+  "changeClasses": ["cosmetic", "home_or_belonging"],
+  "sanctions": ["notice", "freeze", "temporary_restriction", "rare_removal"],
+  "censusDenyKeys": [
+    "legalName",
+    "legal_name",
+    "homeAddress",
+    "streetAddress",
+    "family",
+    "familyMembers",
+    "credential",
+    "password",
+    "paymentMethod",
+    "cardNumber",
+    "identityDocument",
+    "kycDocument",
+    "ssn",
+    "dateOfBirth"
+  ]
+}

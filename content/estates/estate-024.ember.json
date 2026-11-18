@@ -1,0 +1,332 @@
+{
+  "formatVersion": 1,
+  "id": "estate-024",
+  "title": "Estate 24",
+  "static": true,
+  "interior": false,
+  "privacy": "open-estate",
+  "draft": false,
+  "summary": "An open estate slot. No one is written here until they accept an invitation.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 6,
+    "guests": 8,
+    "pets": 2,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6.6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "estate-024-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.16,
+        14
+      ],
+      "material": "grass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        0.06,
+        8
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-life",
+      "kind": "path-life",
+      "movable": false,
+      "transform": {
+        "position": [
+          1.5,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-leaves",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.02,
+        3.2
+      ],
+      "material": "leaf",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.7,
+          0.04,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-garden",
+      "kind": "garden",
+      "movable": false,
+      "transform": {
+        "position": [
+          -4.2,
+          0,
+          1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe path leads home\nLeaf stays at 0",
+      "style": "wood",
+      "width": 1.7,
+      "height": 0.75,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.35,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-post",
+      "kind": "estate-post",
+      "movable": false,
+      "slot": null,
+      "status": "open",
+      "owner": null,
+      "transform": {
+        "position": [
+          0,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -3.4,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "estate-024-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          3.4,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-024-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Estate 24\nOpen\nInvitation comes first",
+      "style": "wood",
+      "width": 1.7,
+      "height": 0.95,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.2,
+          1.4,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "estate-024-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/estate-024/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ],
+  "owner": null,
+  "status": "open",
+  "slot": 24,
+  "legalHolding": null,
+  "kind": "estate",
+  "contents": []
+}

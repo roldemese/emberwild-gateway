@@ -1,0 +1,289 @@
+{
+  "formatVersion": 1,
+  "id": "envoy-gate",
+  "title": "Envoy's gate",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A lantern arch, an uncounted atlas, and the fund river. Leaf stays at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      4.6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "envoy-gate-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.1,
+        12
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-gate-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -3.2,
+          2.6,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-gate-set",
+      "kind": "companion-room",
+      "set": "envoy",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-gate-title",
+      "kind": "sign",
+      "movable": false,
+      "text": "Envoy's gate",
+      "style": "wood",
+      "width": 3.4,
+      "height": 0.55,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          3.3,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-gate-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          4.2,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          -0.7,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-gate-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "envoy-gate-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-to-proving",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "envoy-to-proving",
+      "label": "The fund river",
+      "transform": {
+        "position": [
+          -4.2,
+          0,
+          3.6
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-gate-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Envoy's gate",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          3.3999999999999995
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "envoy-gate-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/envoy-gate/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "envoy-to-proving",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/envoy-gate/proving-room",
+      "label": "The fund river",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "proving-room"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "Same river as the Crossing Bridge.",
+      "steps": 1
+    }
+  ]
+}

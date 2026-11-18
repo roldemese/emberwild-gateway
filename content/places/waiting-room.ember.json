@@ -1,0 +1,665 @@
+{
+  "formatVersion": 1,
+  "id": "waiting-room",
+  "title": "Waiting room",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "The line for a full place. One session of that place. No second copy.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 5000,
+    "guests": 5000,
+    "pets": 5000,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      5
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "w-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.1,
+        12
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-roof",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.2,
+        12
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-wall--6",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4,
+        12
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-wall-6",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4,
+        12
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        4,
+        0.25
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-l1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -3,
+          2.8,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-l2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          3,
+          2.8,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "WAITING ROOM\nOne place. One session.\nWhen someone leaves, the next enters.",
+      "style": "wood",
+      "width": 4,
+      "height": 1.2,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.3,
+          -5.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "arrival-board",
+      "kind": "sign",
+      "movable": false,
+      "text": "HOW WE DO THINGS\nInvite before census\nThis board keeps no Leaf",
+      "style": "wood",
+      "width": 2.4,
+      "height": 1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -3.2,
+          1.8,
+          -5.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "silent-walk-card",
+      "kind": "sign",
+      "movable": false,
+      "text": "Silent walk\nPorch. No words required.\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          1.5,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "suggestion-box",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.55,
+        0.4,
+        0.4
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          3.2,
+          0.45,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "suggestion-note",
+      "kind": "sign",
+      "movable": false,
+      "text": "A thought\nNo Leaf",
+      "style": "wood",
+      "width": 1.1,
+      "height": 0.55,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          3.2,
+          1.15,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "porch-roof",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        8,
+        0.16,
+        4
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          3.2,
+          7.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "porch-post-l",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.2,
+        3.2,
+        0.2
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3.4,
+          1.6,
+          8.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "porch-post-r",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.2,
+        3.2,
+        0.2
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          3.4,
+          1.6,
+          8.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "porch-fire",
+      "kind": "hearth",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          7.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "rocker-a",
+      "kind": "rocker",
+      "movable": false,
+      "transform": {
+        "position": [
+          -2.2,
+          0,
+          6.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "rocker-b",
+      "kind": "rocker",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          6.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "line-sign",
+      "kind": "line-sign",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          1.8,
+          8.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "w-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          0,
+          0,
+          3.2
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "waiting-room-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "waiting-room-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "waiting-room-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Waiting room",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          3.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "waiting-room-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/waiting-room/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ],
+  "capacityNote": "The shelter holds the queue. It is not another copy of the destination."
+}

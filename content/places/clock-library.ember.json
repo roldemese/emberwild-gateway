@@ -1,0 +1,407 @@
+{
+  "formatVersion": 1,
+  "id": "clock-library",
+  "title": "Clock library",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A warm room of clocks, one for each held seat. A seat with no time zone says time unknown.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      4.2
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.012
+  },
+  "nodes": [
+    {
+      "id": "clk-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        0.1,
+        10
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        4.4,
+        0.3
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -4.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-west",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4.4,
+        10
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6,
+          2.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-east",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        4.4,
+        10
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6,
+          2.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-l1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -3.2,
+          3.1,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-l2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          3.2,
+          3.1,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "CLOCK LIBRARY\nHeld seats only\nNo zone, no guess",
+      "style": "wood",
+      "width": 3.2,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          3.3,
+          -3.95
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-wall",
+      "kind": "clock-wall",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          -3.9
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clk-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          3.4,
+          0,
+          3.2
+        ],
+        "rotation": [
+          0,
+          -0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clocks-to-library",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "clocks-to-library",
+      "label": "Library at Sarth",
+      "transform": {
+        "position": [
+          -3.6,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0.7,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-library-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "clock-library-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          4.6
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-library-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Clock library",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "clocks-to-library",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/clock-library/library",
+      "label": "Library at Sarth",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "clock-library-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/clock-library/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

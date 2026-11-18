@@ -1,0 +1,616 @@
+{
+  "formatVersion": 1,
+  "id": "judges-ring",
+  "title": "Judge's Ring",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Twelve equal stone seats under an old oak. A place to sit with a question, not a sentence.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      10
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "ring-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        28,
+        0.16,
+        28
+      ],
+      "material": "moss",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ring-oak",
+      "kind": "oak",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-0",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.35,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          2.9999999999999996,
+          0.35,
+          5.196152422706632
+        ],
+        "rotation": [
+          0,
+          -0.5235987755982988,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-2",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          5.196152422706632,
+          0.35,
+          3.000000000000001
+        ],
+        "rotation": [
+          0,
+          -1.0471975511965976,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-3",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6,
+          0.35,
+          3.6739403974420594e-16
+        ],
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-4",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          5.196152422706632,
+          0.35,
+          -2.9999999999999987
+        ],
+        "rotation": [
+          0,
+          -2.0943951023931953,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-5",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          2.9999999999999996,
+          0.35,
+          -5.196152422706632
+        ],
+        "rotation": [
+          0,
+          -2.6179938779914944,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-6",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          7.347880794884119e-16,
+          0.35,
+          -6
+        ],
+        "rotation": [
+          0,
+          -3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-7",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3.000000000000001,
+          0.35,
+          -5.196152422706632
+        ],
+        "rotation": [
+          0,
+          -3.6651914291880923,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-8",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.196152422706631,
+          0.35,
+          -3.0000000000000027
+        ],
+        "rotation": [
+          0,
+          -4.1887902047863905,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-9",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6,
+          0.35,
+          -1.102182119232618e-15
+        ],
+        "rotation": [
+          0,
+          -4.71238898038469,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-10",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.196152422706632,
+          0.35,
+          3.000000000000001
+        ],
+        "rotation": [
+          0,
+          -5.235987755982989,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "seat-11",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.1,
+        0.45,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3.0000000000000027,
+          0.35,
+          5.19615242270663
+        ],
+        "rotation": [
+          0,
+          -5.759586531581287,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ring-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "JUDGE'S RING\nTwelve seats, one height",
+      "style": "wood",
+      "width": 2.4,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ring-snow",
+      "kind": "snow-cap",
+      "movable": false,
+      "size": [
+        10,
+        0.04,
+        10
+      ],
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ring-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          4,
+          0,
+          8
+        ],
+        "rotation": [
+          0,
+          -0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "judges-ring-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "judges-ring-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          -4,
+          0,
+          9
+        ],
+        "rotation": [
+          0,
+          0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "judges-ring-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Judge's Ring",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          8.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "judges-ring-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/judges-ring/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

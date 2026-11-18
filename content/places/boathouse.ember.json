@@ -1,0 +1,704 @@
+{
+  "formatVersion": 1,
+  "id": "boathouse",
+  "title": "Boathouse",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Stone boathouse on the near shore. The lagoon and the ships are through the gate.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      12
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "bh-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        36,
+        0.16,
+        28
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-water",
+      "kind": "water-live",
+      "movable": false,
+      "size": [
+        40,
+        0.35,
+        16
+      ],
+      "transform": {
+        "position": [
+          0,
+          -0.35,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-house",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        10,
+        4.4,
+        7
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4,
+          2.2,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-roof",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        11,
+        0.3,
+        8
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4,
+          4.6,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.2,
+        0.8,
+        0.1
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4,
+          2.4,
+          1.55
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-l1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          2,
+          1.8,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-l2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          6,
+          1.8,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-l3",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -8,
+          1.8,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "heron-body",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "material": "cloth",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          7,
+          1.1,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "heron-neck",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.08,
+        0.7,
+        0.08
+      ],
+      "material": "cloth",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          7.1,
+          1.6,
+          -4.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "heron-head",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.1,
+      "material": "cloth",
+      "emissive": null,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          7.15,
+          2,
+          -4.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "BOATHOUSE\nNessie\nYou are welcome",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -4,
+          3.4,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-dock",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        3.2,
+        0.12,
+        8
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          2,
+          0.2,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-leaves",
+      "kind": "leaves",
+      "movable": false,
+      "count": 40,
+      "radius": 6,
+      "transform": {
+        "position": [
+          2,
+          0.05,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe bell is for the harbor\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.85,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          6.2,
+          1.4,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "envoy-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Envoy Nessie\nIf you want to become\npart of Emberwild",
+      "style": "wood",
+      "width": 2.2,
+      "height": 1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          3.2,
+          1.6,
+          7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "harbor-board",
+      "kind": "harbor-board",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.4,
+          0,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-life",
+      "kind": "room-set",
+      "set": "harbor",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0.2,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "boat-bell",
+      "kind": "bell",
+      "movable": false,
+      "place": "boathouse",
+      "transform": {
+        "position": [
+          -1.2,
+          2.6,
+          2.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bh-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          4,
+          0,
+          10
+        ],
+        "rotation": [
+          0,
+          -0.2,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "boathouse-to-lagoon",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "boathouse-to-lagoon",
+      "label": "Nessie's Lagoon",
+      "transform": {
+        "position": [
+          -8,
+          0,
+          8
+        ],
+        "rotation": [
+          0,
+          0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "boathouse-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "boathouse-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          8,
+          0,
+          11
+        ],
+        "rotation": [
+          0,
+          -0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "boathouse-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Boathouse",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          10.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "boathouse-to-lagoon",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/boathouse/lagoon",
+      "label": "Nessie's Lagoon",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "lagoon"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Three ships",
+      "steps": 1
+    },
+    {
+      "id": "boathouse-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/boathouse/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

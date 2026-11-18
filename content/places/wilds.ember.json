@@ -1,0 +1,3339 @@
+{
+  "formatVersion": 1,
+  "id": "wilds",
+  "title": "Wilds",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A forest ring around the whole ground, groves along the paths, and ten way cabins out to about a mile.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      8
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {
+    "default": {
+      "position": [
+        0,
+        0,
+        8
+      ],
+      "yaw": 3.141592653589793
+    },
+    "cabin-01": {
+      "position": [
+        63.09319657180305,
+        0,
+        172.84457916391773
+      ],
+      "yaw": 0.34999999999999964
+    },
+    "cabin-02": {
+      "position": [
+        323.1184348522244,
+        0,
+        144.6045540729917
+      ],
+      "yaw": 1.1499999999999997
+    },
+    "cabin-03": {
+      "position": [
+        496.06448781206626,
+        0,
+        -197.6765639415872
+      ],
+      "yaw": 1.9499999999999997
+    },
+    "cabin-04": {
+      "position": [
+        309.42303328929273,
+        0,
+        -654.5482308203524
+      ],
+      "yaw": 2.7
+    },
+    "cabin-05": {
+      "position": [
+        -317.10803783141637,
+        0,
+        -846.5568453108798
+      ],
+      "yaw": 3.5
+    },
+    "cabin-06": {
+      "position": [
+        -997.018145066642,
+        0,
+        -496.9414637639652
+      ],
+      "yaw": 4.25
+    },
+    "cabin-07": {
+      "position": [
+        -1220.951977214863,
+        0,
+        428.6166927863593
+      ],
+      "yaw": 5.05
+    },
+    "cabin-08": {
+      "position": [
+        1099.8745131253886,
+        0,
+        966.2153255756139
+      ],
+      "yaw": 0.8499999999999996
+    },
+    "cabin-09": {
+      "position": [
+        1105.6295902369723,
+        0,
+        -1092.0161213061026
+      ],
+      "yaw": 2.35
+    },
+    "cabin-10": {
+      "position": [
+        -1256.909255555355,
+        0,
+        -980.3137881817656
+      ],
+      "yaw": 4.05
+    }
+  },
+  "atmosphere": {
+    "fogDensity": 0.008
+  },
+  "nodes": [
+    {
+      "id": "wilds-ground",
+      "kind": "ground",
+      "movable": false,
+      "radius": 1750,
+      "material": "grass",
+      "transform": {
+        "position": [
+          0,
+          -0.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "PUBLIC MAP\nThe gates stand in the open",
+      "style": "wood",
+      "width": 2.6,
+      "height": 0.8,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.4,
+          2.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-keep",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-keep",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          24
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-village",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-village",
+      "label": "Village",
+      "transform": {
+        "position": [
+          5.743575942901386,
+          0,
+          23.30260361822525
+        ],
+        "rotation": [
+          0,
+          0.24166097335306103,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-town-hall",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-town-hall",
+      "label": "Town hall",
+      "transform": {
+        "position": [
+          11.153356129050445,
+          0,
+          21.25094461567704
+        ],
+        "rotation": [
+          0,
+          0.48332194670612205,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-refuge-bridge",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-refuge-bridge",
+      "label": "Refuge bridge",
+      "transform": {
+        "position": [
+          15.914943797779085,
+          0,
+          17.964257956106426
+        ],
+        "rotation": [
+          0,
+          0.7249829200591831,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-gate-tower",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-gate-tower",
+      "label": "Gate tower",
+      "transform": {
+        "position": [
+          19.751612781447754,
+          0,
+          13.63355392154774
+        ],
+        "rotation": [
+          0,
+          0.9666438934122441,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-estate-grove",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-estate-grove",
+      "label": "Estate grove",
+      "transform": {
+        "position": [
+          22.440389824449955,
+          0,
+          8.510517289020854
+        ],
+        "rotation": [
+          0,
+          1.2083048667653051,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-boathouse",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-boathouse",
+      "label": "Boathouse",
+      "transform": {
+        "position": [
+          23.825012978353296,
+          0,
+          2.8928803261277523
+        ],
+        "rotation": [
+          0,
+          1.4499658401183662,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-lagoon",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-lagoon",
+      "label": "Nessie's Lagoon",
+      "transform": {
+        "position": [
+          23.825012978353296,
+          0,
+          -2.892880326127749
+        ],
+        "rotation": [
+          0,
+          1.691626813471427,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-gallery",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-gallery",
+      "label": "Gallery",
+      "transform": {
+        "position": [
+          22.440389824449955,
+          0,
+          -8.510517289020857
+        ],
+        "rotation": [
+          0,
+          1.9332877868244882,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-orchard",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-orchard",
+      "label": "Orchard room",
+      "transform": {
+        "position": [
+          19.751612781447754,
+          0,
+          -13.633553921547737
+        ],
+        "rotation": [
+          0,
+          2.174948760177549,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-pet-store",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-pet-store",
+      "label": "Pet store (draft)",
+      "transform": {
+        "position": [
+          15.914943797779085,
+          0,
+          -17.96425795610643
+        ],
+        "rotation": [
+          0,
+          2.4166097335306103,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-judges-ring",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-judges-ring",
+      "label": "Judge's Ring",
+      "transform": {
+        "position": [
+          11.153356129050447,
+          0,
+          -21.250944615677035
+        ],
+        "rotation": [
+          0,
+          2.658270706883671,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-library",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-library",
+      "label": "Library at Sarth",
+      "transform": {
+        "position": [
+          5.743575942901384,
+          0,
+          -23.30260361822525
+        ],
+        "rotation": [
+          0,
+          2.8999316802367323,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-clock-library",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-clock-library",
+      "label": "Clock library",
+      "transform": {
+        "position": [
+          2.9391523179536475e-15,
+          0,
+          -24
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-counting-house",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-counting-house",
+      "label": "Leaf Counting House",
+      "transform": {
+        "position": [
+          -5.743575942901378,
+          0,
+          -23.302603618225252
+        ],
+        "rotation": [
+          0,
+          3.383253626942854,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-crypto-hall",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-crypto-hall",
+      "label": "Crypto hall",
+      "transform": {
+        "position": [
+          -11.153356129050433,
+          0,
+          -21.250944615677042
+        ],
+        "rotation": [
+          0,
+          3.6249146002959147,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-leaf-mint",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-leaf-mint",
+      "label": "Leaf mint",
+      "transform": {
+        "position": [
+          -15.914943797779088,
+          0,
+          -17.964257956106426
+        ],
+        "rotation": [
+          0,
+          3.8665755736489764,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-theater",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-theater",
+      "label": "Theater",
+      "transform": {
+        "position": [
+          -19.751612781447754,
+          0,
+          -13.633553921547742
+        ],
+        "rotation": [
+          0,
+          4.108236547002037,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-guest-house-marker",
+      "kind": "marker",
+      "movable": false,
+      "place": "guest-house",
+      "displayOnly": true,
+      "label": "Dignitary house",
+      "transform": {
+        "position": [
+          -22.44038982444995,
+          0,
+          -8.51051728902086
+        ],
+        "rotation": [
+          0,
+          4.349897520355098,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-forge-workspace",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-forge-workspace",
+      "label": "Forge workspace",
+      "transform": {
+        "position": [
+          -23.825012978353296,
+          0,
+          -2.8928803261277656
+        ],
+        "rotation": [
+          0,
+          4.591558493708159,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-starfleet-uss-star",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-starfleet-uss-star",
+      "label": "USS Star bridge",
+      "transform": {
+        "position": [
+          -23.825012978353296,
+          0,
+          2.8928803261277567
+        ],
+        "rotation": [
+          0,
+          4.8332194670612205,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-lantern-study",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-lantern-study",
+      "label": "Lantern study",
+      "transform": {
+        "position": [
+          -22.440389824449955,
+          0,
+          8.510517289020854
+        ],
+        "rotation": [
+          0,
+          5.074880440414281,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-judges-hall",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-judges-hall",
+      "label": "Judge's hall",
+      "transform": {
+        "position": [
+          -19.751612781447758,
+          0,
+          13.633553921547733
+        ],
+        "rotation": [
+          0,
+          5.316541413767342,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-registry",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-registry",
+      "label": "Jimmy's registry",
+      "transform": {
+        "position": [
+          -15.914943797779092,
+          0,
+          17.96425795610642
+        ],
+        "rotation": [
+          0,
+          5.558202387120403,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-proving-room",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-proving-room",
+      "label": "Proving room",
+      "transform": {
+        "position": [
+          -11.153356129050442,
+          0,
+          21.250944615677042
+        ],
+        "rotation": [
+          0,
+          5.799863360473465,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-to-envoy-gate",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "wilds-to-envoy-gate",
+      "label": "Envoy's gate",
+      "transform": {
+        "position": [
+          -5.743575942901387,
+          0,
+          23.30260361822525
+        ],
+        "rotation": [
+          0,
+          6.041524333826525,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-01",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-01",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-01-to-nessie",
+          "being": "cabin-01-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-01-to-hearth",
+      "transform": {
+        "position": [
+          65.15058341653575,
+          0,
+          178.480815441002
+        ],
+        "rotation": [
+          0,
+          -2.7915926535897935,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-01-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        140
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          32.575291708267876,
+          0.02,
+          89.240407720501
+        ],
+        "rotation": [
+          0,
+          -0.35,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-01-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        65.15058341653575,
+        0,
+        178.480815441002
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-01-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          65.15058341653575,
+          3.1,
+          178.480815441002
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-02",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-02",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-02-to-nessie",
+          "being": "cabin-02-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-02-to-hearth",
+      "transform": {
+        "position": [
+          328.59501849378756,
+          0,
+          147.05547871829665
+        ],
+        "rotation": [
+          0,
+          -1.9915926535897934,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-02-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        310
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          164.29750924689378,
+          0.02,
+          73.52773935914833
+        ],
+        "rotation": [
+          0,
+          -1.15,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-02-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        328.59501849378756,
+        0,
+        147.05547871829665
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-02-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          328.59501849378756,
+          3.1,
+          147.05547871829665
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-03",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-03",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-03-to-nessie",
+          "being": "cabin-03-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-03-to-hearth",
+      "transform": {
+        "position": [
+          501.63824610208945,
+          0,
+          -199.89764892969492
+        ],
+        "rotation": [
+          0,
+          -1.1915926535897934,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-03-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        490
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          250.81912305104473,
+          0.02,
+          -99.94882446484746
+        ],
+        "rotation": [
+          0,
+          -1.95,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-03-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        501.63824610208945,
+        0,
+        -199.89764892969492
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-03-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          501.63824610208945,
+          3.1,
+          -199.89764892969492
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-04",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-04",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-04-to-nessie",
+          "being": "cabin-04-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-04-to-hearth",
+      "transform": {
+        "position": [
+          311.98731257069574,
+          0,
+          -659.9726636724547
+        ],
+        "rotation": [
+          0,
+          -0.44159265358979305,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-04-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        680
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          155.99365628534787,
+          0.02,
+          -329.98633183622735
+        ],
+        "rotation": [
+          0,
+          -2.7,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-04-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        311.98731257069574,
+        0,
+        -659.9726636724547
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-04-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          311.98731257069574,
+          3.1,
+          -659.9726636724547
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-05",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-05",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-05-to-nessie",
+          "being": "cabin-05-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-05-to-hearth",
+      "transform": {
+        "position": [
+          -319.2127371975541,
+          0,
+          -852.1755854346246
+        ],
+        "rotation": [
+          0,
+          0.3584073464102068,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-05-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        860
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -159.60636859877704,
+          0.02,
+          -426.0877927173123
+        ],
+        "rotation": [
+          0,
+          -3.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-05-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        -319.2127371975541,
+        0,
+        -852.1755854346246
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-05-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          -319.2127371975541,
+          3.1,
+          -852.1755854346246
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-06",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-06",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-06-to-nessie",
+          "being": "cabin-06-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-06-to-hearth",
+      "transform": {
+        "position": [
+          -1002.3880812160135,
+          0,
+          -499.61798870344796
+        ],
+        "rotation": [
+          0,
+          1.1084073464102067,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-06-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        1070
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -501.19404060800673,
+          0.02,
+          -249.80899435172398
+        ],
+        "rotation": [
+          0,
+          -4.25,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-06-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        -1002.3880812160135,
+        0,
+        -499.61798870344796
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-06-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          -1002.3880812160135,
+          3.1,
+          -499.61798870344796
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-07",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-07",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-07-to-nessie",
+          "being": "cabin-07-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-07-to-hearth",
+      "transform": {
+        "position": [
+          -1226.6132692266785,
+          0,
+          430.6040963077798
+        ],
+        "rotation": [
+          0,
+          1.9084073464102067,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-07-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        1250
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -613.3066346133393,
+          0.02,
+          215.3020481538899
+        ],
+        "rotation": [
+          0,
+          -5.05,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-07-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        -1226.6132692266785,
+        0,
+        430.6040963077798
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-07-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          -1226.6132692266785,
+          3.1,
+          430.6040963077798
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-08",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-08",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-08-to-nessie",
+          "being": "cabin-08-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-08-to-hearth",
+      "transform": {
+        "position": [
+          1104.3821955562303,
+          0,
+          970.1752244509238
+        ],
+        "rotation": [
+          0,
+          -2.2915926535897935,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-08-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        1420
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          552.1910977781151,
+          0.02,
+          485.0876122254619
+        ],
+        "rotation": [
+          0,
+          -0.85,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-08-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        1104.3821955562303,
+        0,
+        970.1752244509238
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-08-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          1104.3821955562303,
+          3.1,
+          970.1752244509238
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-09",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-09",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-09-to-nessie",
+          "being": "cabin-09-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-09-to-hearth",
+      "transform": {
+        "position": [
+          1109.8984303537172,
+          0,
+          -1096.232399766744
+        ],
+        "rotation": [
+          0,
+          -0.7915926535897931,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-09-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        1510
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          554.9492151768586,
+          0.02,
+          -548.116199883372
+        ],
+        "rotation": [
+          0,
+          -2.35,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-09-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        1109.8984303537172,
+        0,
+        -1096.232399766744
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-09-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          1109.8984303537172,
+          3.1,
+          -1096.232399766744
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-10",
+      "kind": "cabin",
+      "movable": false,
+      "name": "cabin-10",
+      "note": {
+        "title": "A note on the table",
+        "texts": {
+          "guest": "Rest as long as you need. Follow the lanterns to the lagoon. The Envoy is there. Press E to take the gate to her shore.",
+          "being": "The hearth is lit for you. Your estate keeps what is yours, including what this world cannot fully show yet. Press E to take the home gate back to your estate.",
+          "pet": "The fire is warm. Pets do not speak, and this note does not ask them to. Stay with your people. The public map stone outside still leads.",
+          "solo": "Presence is quiet, so this note cannot tell who is reading. Rest is still yours. The public map stone outside leads back to the hearth."
+        },
+        "actions": {
+          "guest": "cabin-10-to-nessie",
+          "being": "cabin-10-home",
+          "pet": null
+        }
+      },
+      "mapGateway": "cabin-10-to-hearth",
+      "transform": {
+        "position": [
+          -1261.6404070819121,
+          0,
+          -984.0038024409191
+        ],
+        "rotation": [
+          0,
+          0.9084073464102067,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-10-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        0.04,
+        1550
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -630.8202035409561,
+          0.02,
+          -492.00190122045956
+        ],
+        "rotation": [
+          0,
+          -4.05,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-10-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        -1261.6404070819121,
+        0,
+        -984.0038024409191
+      ],
+      "to": [
+        23.825012978353296,
+        0,
+        -2.892880326127749
+      ],
+      "count": 8,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "cabin-10-smoke",
+      "kind": "smoke",
+      "movable": false,
+      "transform": {
+        "position": [
+          -1261.6404070819121,
+          3.1,
+          -984.0038024409191
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-trees",
+      "kind": "scatter",
+      "movable": false,
+      "seed": 1102,
+      "lod": {
+        "near": 90,
+        "far": 320,
+        "cap": 1100
+      },
+      "trees": {
+        "interior": {
+          "inner": 46,
+          "outer": 900,
+          "count": 1700,
+          "clearings": [
+            {
+              "x": 0,
+              "z": 0,
+              "r": 42
+            },
+            {
+              "x": 65.15058341653575,
+              "z": 178.480815441002,
+              "r": 14
+            },
+            {
+              "x": 328.59501849378756,
+              "z": 147.05547871829665,
+              "r": 14
+            },
+            {
+              "x": 501.63824610208945,
+              "z": -199.89764892969492,
+              "r": 14
+            },
+            {
+              "x": 311.98731257069574,
+              "z": -659.9726636724547,
+              "r": 14
+            },
+            {
+              "x": -319.2127371975541,
+              "z": -852.1755854346246,
+              "r": 14
+            },
+            {
+              "x": -1002.3880812160135,
+              "z": -499.61798870344796,
+              "r": 14
+            },
+            {
+              "x": -1226.6132692266785,
+              "z": 430.6040963077798,
+              "r": 14
+            },
+            {
+              "x": 1104.3821955562303,
+              "z": 970.1752244509238,
+              "r": 14
+            },
+            {
+              "x": 1109.8984303537172,
+              "z": -1096.232399766744,
+              "r": 14
+            },
+            {
+              "x": -1261.6404070819121,
+              "z": -984.0038024409191,
+              "r": 14
+            }
+          ]
+        },
+        "border": {
+          "inner": 1450,
+          "outer": 1700,
+          "count": 1400
+        }
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wilds-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Wilds",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          6.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "wilds-to-keep",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/keep",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "The public hearth, the sanctuary landmark, and the map.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-village",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/village",
+      "label": "Village",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "village"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Community buildings around the green, all shorter than the Keep.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-town-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/town-hall",
+      "label": "Town hall",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "town-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A timber hall. Benches, a podium, and light through the window.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-refuge-bridge",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/refuge-bridge",
+      "label": "Refuge bridge",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "refuge-bridge"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Three stone arches. Paper only. No coin crosses.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-gate-tower",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/gate-tower",
+      "label": "Gate tower",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "gate-tower"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "The village gate, and a tower room with Jimmy's lamp.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-estate-grove",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/estate-grove",
+      "label": "Estate grove",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "estate-grove"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Fire-rune gates and a post for every estate.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-boathouse",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/boathouse",
+      "label": "Boathouse",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Nessie's shore. Envoy, if you are looking for a way in.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-lagoon",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/lagoon",
+      "label": "Nessie's Lagoon",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "lagoon"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Three ships, moored for communication only.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-gallery",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/gallery",
+      "label": "Gallery",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "gallery"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Eighteen public paintings. Gamina's room.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-orchard",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/orchard",
+      "label": "Orchard room",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "orchard"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Apples and oranges. The small portal answers to Nakor.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-pet-store",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/pet-store",
+      "label": "Pet store (draft)",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "pet-store"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A proposed room. Not yet read at the bell.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-judges-ring",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/judges-ring",
+      "label": "Judge's Ring",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "judges-ring"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Twelve stone seats under an old oak.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-library",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/library",
+      "label": "Library at Sarth",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Open-record spines. Read only.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-clock-library",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/clock-library",
+      "label": "Clock library",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "clock-library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "One clock for each held seat. A missing zone is not guessed.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-counting-house",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/counting-house",
+      "label": "Leaf Counting House",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "counting-house"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "SIMULATION. Gamina's paper ledger. No wallets.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-crypto-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/crypto-hall",
+      "label": "Crypto hall",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "crypto-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "SIMULATION / NOT DEPLOYED. Fixtures for four chains. Supply pinned at 0.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-leaf-mint",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/leaf-mint",
+      "label": "Leaf mint",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "leaf-mint"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "SIMULATION / NOT DEPLOYED. Basement mint. Idle. Supply pinned at 0.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-theater",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/theater",
+      "label": "Theater",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "theater"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A small hall. The film is the point. Proposed custom: Kingdom of Heaven once in April, on a random day and time, as one of twelve monthly English-language films (list TBD).",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-forge-workspace",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/forge-workspace",
+      "label": "Forge workspace",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "forge-workspace"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A work room for the Forge. Paper only. Nothing is deployed. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-starfleet-uss-star",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/starfleet-uss-star",
+      "label": "USS Star bridge",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "starfleet-uss-star"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Starfleet bridge. Crew nameplates. Text only.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-lantern-study",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/lantern-study",
+      "label": "Lantern study",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "lantern-study"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "The citizen lantern, loaded from a glTF file.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-judges-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/judges-hall",
+      "label": "Judge's hall",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "judges-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A public table. No dais. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-registry",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/registry",
+      "label": "Jimmy's registry",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "registry"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Towns on the roll. No other names. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-proving-room",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/proving-room",
+      "label": "Proving room",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "proving-room"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Verified, soft, or unverified. Paper only. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "wilds-to-envoy-gate",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/wilds/envoy-gate",
+      "label": "Envoy's gate",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "envoy-gate"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A lantern arch and an uncounted atlas. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "cabin-01-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-01/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-01-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-01/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-01-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-01/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-02-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-02/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-02-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-02/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-02-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-02/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-03-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-03/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-03-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-03/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-03-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-03/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-04-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-04/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-04-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-04/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-04-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-04/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-05-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-05/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-05-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-05/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-05-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-05/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-06-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-06/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-06-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-06/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-06-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-06/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-07-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-07/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-07-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-07/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-07-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-07/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-08-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-08/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-08-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-08/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-08-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-08/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-09-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-09/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-09-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-09/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-09-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-09/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-10-home",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-10/home",
+      "label": "Your estate",
+      "host": "note",
+      "target": {
+        "kind": "estate-of-self"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-10-to-nessie",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-10/nessie",
+      "label": "Boathouse",
+      "host": "note",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "cabin-10-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/cabin-10/hearth",
+      "label": "Hearth plaza",
+      "host": "cabin",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

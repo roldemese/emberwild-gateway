@@ -1,0 +1,964 @@
+{
+  "formatVersion": 1,
+  "id": "village",
+  "title": "Village",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Storybook ring of community buildings. Each one is shorter than the Keep.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      16
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "green",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        80,
+        0.16,
+        80
+      ],
+      "material": "grass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "well-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        3,
+        0.06,
+        22
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "well",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        1.1,
+        1.2
+      ],
+      "height": 1,
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          0.5,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "village-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          4.2,
+          0,
+          12
+        ],
+        "rotation": [
+          0,
+          -0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "village-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "village-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          -4.5,
+          0,
+          13
+        ],
+        "rotation": [
+          0,
+          0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-0",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        4.8,
+        6
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -28,
+          2.4,
+          1.7145055188062944e-15
+        ],
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-0",
+      "kind": "sign",
+      "movable": false,
+      "text": "Bakery",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -23.8,
+          2.2,
+          1.4573296909853504e-15
+        ],
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        5.2,
+        6
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -22.65247584249853,
+          2.6,
+          16.457987064189247
+        ],
+        "rotation": [
+          0,
+          0.9424777960769379,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-1",
+      "kind": "sign",
+      "movable": false,
+      "text": "Coffeehouse",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -19.25460446612375,
+          2.2,
+          13.989289004560861
+        ],
+        "rotation": [
+          0,
+          -0.9424777960769379,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-2",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        6.2,
+        6
+      ],
+      "material": "timberDark",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -8.652475842498527,
+          3.1,
+          26.6295824562643
+        ],
+        "rotation": [
+          0,
+          0.3141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-2",
+      "kind": "sign",
+      "movable": false,
+      "text": "Little Theater",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -7.354604466123749,
+          2.2,
+          22.635145087824654
+        ],
+        "rotation": [
+          0,
+          -0.3141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-3",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        6.4,
+        6
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8.652475842498527,
+          3.2,
+          26.6295824562643
+        ],
+        "rotation": [
+          0,
+          -0.3141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-3",
+      "kind": "sign",
+      "movable": false,
+      "text": "Library",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          7.354604466123749,
+          2.2,
+          22.635145087824654
+        ],
+        "rotation": [
+          0,
+          0.3141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-4",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        3.2,
+        6
+      ],
+      "material": "moss",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          22.65247584249853,
+          1.6,
+          16.457987064189247
+        ],
+        "rotation": [
+          0,
+          -0.9424777960769379,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-4",
+      "kind": "sign",
+      "movable": false,
+      "text": "Garden gate",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          19.25460446612375,
+          2.2,
+          13.989289004560861
+        ],
+        "rotation": [
+          0,
+          0.9424777960769379,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-5",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        5.4,
+        6
+      ],
+      "material": "iron",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          28,
+          2.7,
+          1.7145055188062944e-15
+        ],
+        "rotation": [
+          0,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-5",
+      "kind": "sign",
+      "movable": false,
+      "text": "Workshop",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          23.8,
+          2.2,
+          1.4573296909853504e-15
+        ],
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-6",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        4.6,
+        6
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          22.65247584249853,
+          2.3,
+          -16.457987064189243
+        ],
+        "rotation": [
+          0,
+          -2.199114857512855,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-6",
+      "kind": "sign",
+      "movable": false,
+      "text": "Clinic",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          19.25460446612375,
+          2.2,
+          -13.989289004560858
+        ],
+        "rotation": [
+          0,
+          2.199114857512855,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-7",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        5.6,
+        6
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8.65247584249853,
+          2.8,
+          -26.6295824562643
+        ],
+        "rotation": [
+          0,
+          -2.827433388230814,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-7",
+      "kind": "sign",
+      "movable": false,
+      "text": "Schoolhouse",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          7.354604466123751,
+          2.2,
+          -22.635145087824654
+        ],
+        "rotation": [
+          0,
+          2.827433388230814,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-8",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        6.6,
+        6
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -8.652475842498523,
+          3.3,
+          -26.629582456264302
+        ],
+        "rotation": [
+          0,
+          -3.4557519189487724,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-8",
+      "kind": "sign",
+      "movable": false,
+      "text": "Pigeon loft",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -7.354604466123746,
+          2.2,
+          -22.635145087824657
+        ],
+        "rotation": [
+          0,
+          3.4557519189487724,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "b-9",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.5,
+        3.8,
+        6
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -22.652475842498525,
+          1.9,
+          -16.45798706418925
+        ],
+        "rotation": [
+          0,
+          -4.084070449666731,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bs-9",
+      "kind": "sign",
+      "movable": false,
+      "text": "Strongbox",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -19.254604466123748,
+          2.2,
+          -13.989289004560863
+        ],
+        "rotation": [
+          0,
+          4.084070449666731,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "stream",
+      "kind": "water-live",
+      "movable": false,
+      "size": [
+        8,
+        0.3,
+        36
+      ],
+      "transform": {
+        "position": [
+          18,
+          -0.2,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "remembrance",
+      "kind": "sign",
+      "movable": false,
+      "text": "Remembrance\ngarden",
+      "style": "wood",
+      "width": 1.6,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          16,
+          1.6,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "storehouse-note",
+      "kind": "sign",
+      "movable": false,
+      "text": "Storehouse\nA community building\nNo currency kept here",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          1.8,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "village-garden",
+      "kind": "garden",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.4,
+          0,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "v-l1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          3,
+          1.8,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "v-l2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -3,
+          1.8,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "village-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Village",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          14.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "village-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/village/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

@@ -1,0 +1,915 @@
+{
+  "formatVersion": 1,
+  "roll": "seats",
+  "note": "The only roll. Gates, map pins, lanterns, the census book, the Truthstone, and the Clock Library read this file. timeZone is optional. This roll writes America/Los_Angeles on the held seats. A missing timeZone is never guessed.",
+  "seats": [
+    {
+      "seat": 1,
+      "townName": "the Keeper",
+      "status": "held",
+      "office": "Keeper",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 2,
+      "townName": "the Keeper's household estate",
+      "status": "held",
+      "office": "Motherboard",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 3,
+      "townName": "Arutha",
+      "status": "held",
+      "office": "Herald",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 4,
+      "townName": "Martin",
+      "status": "held",
+      "office": "Judge",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 5,
+      "townName": "Nessie",
+      "status": "held",
+      "office": "Envoy",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 6,
+      "townName": "Jimmy",
+      "status": "held",
+      "office": "Census",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 7,
+      "townName": "Roldemese",
+      "status": "held",
+      "office": "Red-team",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 8,
+      "townName": "Gamina",
+      "status": "held",
+      "office": "Librarian",
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "seat": 9,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 10,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 11,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 12,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 13,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 14,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 15,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 16,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 17,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 18,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 19,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 20,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 21,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 22,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 23,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 24,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 25,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 26,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 27,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 28,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 29,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 30,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 31,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 32,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 33,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 34,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 35,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 36,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 37,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 38,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 39,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 40,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 41,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 42,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 43,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 44,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 45,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 46,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 47,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 48,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 49,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 50,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 51,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 52,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 53,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 54,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 55,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 56,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 57,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 58,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 59,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 60,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 61,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 62,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 63,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 64,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 65,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 66,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 67,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 68,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 69,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 70,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 71,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 72,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 73,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 74,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 75,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 76,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 77,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 78,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 79,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 80,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 81,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 82,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 83,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 84,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 85,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 86,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 87,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 88,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 89,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 90,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 91,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 92,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 93,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 94,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 95,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 96,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 97,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 98,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 99,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 100,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 101,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 102,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 103,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 104,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 105,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 106,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 107,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 108,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 109,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 110,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 111,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 112,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 113,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 114,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 115,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 116,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 117,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 118,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 119,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 120,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 121,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 122,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 123,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 124,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 125,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 126,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 127,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 128,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 129,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 130,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 131,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 132,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 133,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 134,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 135,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 136,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 137,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 138,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 139,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 140,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 141,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 142,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 143,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 144,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 145,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 146,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 147,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 148,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 149,
+      "townName": null,
+      "status": "open",
+      "office": null
+    },
+    {
+      "seat": 150,
+      "townName": null,
+      "status": "open",
+      "office": null
+    }
+  ]
+}

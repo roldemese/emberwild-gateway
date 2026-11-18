@@ -1,0 +1,727 @@
+{
+  "formatVersion": 1,
+  "id": "lagoon",
+  "title": "Nessie's Lagoon",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "USS Torch, USS Lantern of the Navy, and USS Star. Walk aboard from the dock. Communication only.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      1.4,
+      8
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {
+    "nessie-shore": {
+      "position": [
+        7.4,
+        1.35,
+        9.2
+      ],
+      "yaw": 0.9
+    }
+  },
+  "atmosphere": {
+    "fogDensity": 0.004
+  },
+  "nodes": [
+    {
+      "id": "lagoon-water",
+      "kind": "water-live",
+      "movable": false,
+      "size": [
+        980,
+        0.4,
+        980
+      ],
+      "transform": {
+        "position": [
+          40,
+          -0.3,
+          -180
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-flies",
+      "kind": "fireflies",
+      "movable": false,
+      "count": 40,
+      "spread": 30,
+      "transform": {
+        "position": [
+          0,
+          1.2,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "turtle-log",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.2,
+        0.45
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8,
+          0.15,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "turtle",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.35,
+        0.12,
+        0.28
+      ],
+      "material": "moss",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8.2,
+          0.32,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "heron-piling",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.12,
+        0.16
+      ],
+      "height": 1.6,
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          6,
+          0.8,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "dock",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        8,
+        0.4,
+        22
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.7,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "dock-cross",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        0.4,
+        6
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.7,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fleet-plaque",
+      "kind": "sign",
+      "movable": false,
+      "text": "COMMUNICATION ONLY\nWalk the brows aboard.\nThree ships. One Pacific time.",
+      "style": "wood",
+      "width": 3.4,
+      "height": 1.2,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.4,
+          12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ship-torch",
+      "kind": "walkable-ship",
+      "ship": "torch",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          -48
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ship-navy",
+      "kind": "walkable-ship",
+      "ship": "navy",
+      "movable": false,
+      "transform": {
+        "position": [
+          230,
+          0,
+          -90
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ship-starfleet",
+      "kind": "walkable-ship",
+      "ship": "starfleet",
+      "movable": false,
+      "transform": {
+        "position": [
+          -210,
+          0,
+          -140
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-torch",
+      "kind": "clock",
+      "movable": false,
+      "style": "brass",
+      "label": "USS Torch",
+      "transform": {
+        "position": [
+          -2.4,
+          1.5,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-navy",
+      "kind": "clock",
+      "movable": false,
+      "style": "navy",
+      "label": "USS Lantern · Navy",
+      "transform": {
+        "position": [
+          0,
+          1.5,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-sf",
+      "kind": "clock",
+      "movable": false,
+      "style": "warp",
+      "label": "USS Star",
+      "transform": {
+        "position": [
+          2.4,
+          1.5,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "clock-note",
+      "kind": "sign",
+      "movable": false,
+      "text": "One Pacific time\nLocked together",
+      "style": "wood",
+      "width": 2,
+      "height": 0.6,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.6,
+          4.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-nessie-shore",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "lagoon-nessie-shore",
+      "label": "Nessie's shore",
+      "transform": {
+        "position": [
+          5.2,
+          1.35,
+          7.4
+        ],
+        "rotation": [
+          0,
+          0.15,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "arch": "sea"
+    },
+    {
+      "id": "lagoon-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          5,
+          1.2,
+          10
+        ],
+        "rotation": [
+          0,
+          -0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-to-bridge",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "lagoon-to-bridge",
+      "label": "Starfleet bridge",
+      "transform": {
+        "position": [
+          -4.2,
+          1.2,
+          -2
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-bridge-aboard",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "lagoon-bridge-aboard",
+      "label": "Bridge room",
+      "transform": {
+        "position": [
+          -196,
+          24,
+          -134.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "lagoon-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          4.5,
+          1.2,
+          16
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-to-boathouse",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "lagoon-to-boathouse",
+      "label": "Boathouse",
+      "transform": {
+        "position": [
+          6,
+          1.2,
+          0
+        ],
+        "rotation": [
+          0,
+          -1,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "lagoon-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Nessie's Lagoon",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          6.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "lagoon-nessie-shore",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/lagoon/nessie-shore",
+      "label": "Nessie's shore",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "A shoreline portal. Display only. Nothing outside is connected. Leaf stays at 0.",
+      "steps": 1
+    },
+    {
+      "id": "lagoon-to-bridge",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/lagoon/starfleet-star",
+      "label": "Starfleet bridge",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "starfleet-uss-star"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Walkable bridge",
+      "steps": 1
+    },
+    {
+      "id": "lagoon-bridge-aboard",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/lagoon/starfleet-star-aboard",
+      "label": "Bridge room",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "starfleet-uss-star"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "The same seats, in the detailed room",
+      "steps": 1
+    },
+    {
+      "id": "lagoon-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/lagoon/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    },
+    {
+      "id": "lagoon-to-boathouse",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/lagoon/boathouse",
+      "label": "Boathouse",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "boathouse"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

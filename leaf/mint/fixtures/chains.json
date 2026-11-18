@@ -1,0 +1,53 @@
+{
+  "label": "SIMULATION / NOT DEPLOYED",
+  "source": "mocked-fixture",
+  "liveNetwork": false,
+  "wallet": false,
+  "note": "Viewing-room plaques. These numbers are fixtures. They are not a live feed, and the Leaf mint is not deployed on any of these chains.",
+  "chains": [
+    {
+      "id": "base",
+      "signTitle": "BASE",
+      "title": "Base",
+      "family": "evm-l2",
+      "refusedChainIds": [8453, 84532],
+      "fixtureHeight": 100,
+      "leafDeployed": false,
+      "leafSupply": 0,
+      "note": "The same Solidity would apply. The constructor refuses chain ids 8453 and 84532. Nothing is deployed."
+    },
+    {
+      "id": "solana",
+      "signTitle": "SOLANA",
+      "title": "Solana",
+      "family": "spl",
+      "refusedChainIds": [],
+      "fixtureHeight": 100,
+      "leafDeployed": false,
+      "leafSupply": 0,
+      "note": "An SPL mint with authority frozen by the pin. No keypair is created. See the Solana design note."
+    },
+    {
+      "id": "ethereum",
+      "signTitle": "ETHEREUM",
+      "title": "Ethereum",
+      "family": "evm-l1",
+      "refusedChainIds": [1, 11155111],
+      "fixtureHeight": 100,
+      "leafDeployed": false,
+      "leafSupply": 0,
+      "note": "Home of the reference source. The constructor refuses chain id 1 and Sepolia 11155111. Nothing is deployed."
+    },
+    {
+      "id": "bitcoin",
+      "signTitle": "BITCOIN",
+      "title": "Bitcoin",
+      "family": "ordinals-runes",
+      "refusedChainIds": [],
+      "fixtureHeight": 100,
+      "leafDeployed": false,
+      "leafSupply": 0,
+      "note": "No rune is etched and no inscription is made. A rune here would have no premine and no open mint."
+    }
+  ]
+}

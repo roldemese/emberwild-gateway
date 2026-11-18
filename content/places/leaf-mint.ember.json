@@ -1,0 +1,532 @@
+{
+  "formatVersion": 1,
+  "id": "leaf-mint",
+  "title": "Leaf mint",
+  "static": true,
+  "interior": true,
+  "privacy": "public",
+  "draft": false,
+  "summary": "SIMULATION / NOT DEPLOYED. The basement mint. Paused. Supply pinned at 0. The Keeper does not plan to mint. No wallets.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      4.4
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.018
+  },
+  "nodes": [
+    {
+      "id": "mint-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        0.1,
+        11
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        4.4,
+        0.3
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -4.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-west",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        4.4,
+        11
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -6,
+          2.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-east",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        4.4,
+        11
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          6,
+          2.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-ceiling",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12,
+        0.14,
+        11
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          4.4,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-lamp-w",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -3.2,
+          3.2,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-lamp-e",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          3.2,
+          3.2,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "press-base",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.6,
+        1,
+        1.3
+      ],
+      "material": "iron",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.5,
+          -2.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "press-head",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.36,
+        0.9
+      ],
+      "material": "iron",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          1.2,
+          -2.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-supply",
+      "kind": "sign",
+      "movable": false,
+      "text": "LEAF MINT\nIDLE\nSupply 0\nNot deployed",
+      "style": "brass",
+      "width": 2.8,
+      "height": 1.4,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          2.5,
+          -4.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-policy",
+      "kind": "sign",
+      "movable": false,
+      "text": "SIMULATION\nNOT DEPLOYED\nSupply pinned\nat 0",
+      "style": "wood",
+      "width": 2.2,
+      "height": 1.2,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -3.4,
+          1.8,
+          -4.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-roles",
+      "kind": "sign",
+      "movable": false,
+      "text": "Two keepers\nCouncil of five\nSeven-day lock\nPause, no mint",
+      "style": "wood",
+      "width": 2.2,
+      "height": 1.2,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          3.4,
+          1.8,
+          -4.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "leaf-mint-to-crypto-hall",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "leaf-mint-to-crypto-hall",
+      "label": "Crypto hall",
+      "transform": {
+        "position": [
+          -3.6,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "mint-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          3.4,
+          0,
+          3.2
+        ],
+        "rotation": [
+          0,
+          -0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "leaf-mint-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "leaf-mint-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          0,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          3.141592653589793,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "leaf-mint-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Leaf mint",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "leaf-mint-to-crypto-hall",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/leaf-mint/crypto-hall",
+      "label": "Crypto hall",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "crypto-hall"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "Back up to the viewing room.",
+      "steps": 1
+    },
+    {
+      "id": "leaf-mint-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/leaf-mint/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

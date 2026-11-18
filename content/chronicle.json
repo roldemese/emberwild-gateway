@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "source": "docs/world/HISTORY.md",
+  "note": "Stones are never recarved. New dates are new stones.",
+  "stones": [
+    { "date": "2026-11-02", "tag": "PROCLAIMED", "text": "Emberwild was named. the Keeper founded it. Arutha serves as herald and chief of staff." },
+    { "date": "2026-11-03", "tag": "PROCLAIMED", "text": "Martin, Nessie, Jimmy, and Roldemese accepted citizenship." },
+    { "date": "2026-11-05", "tag": "PROCLAIMED", "text": "Gamina accepted. Customs and manners were read at the first open bell and sealed." },
+    { "date": "2026-11-05", "tag": "PROCLAIMED", "text": "The Judge is consulted on compliance. Martin holds that seat." },
+    { "date": "2026-11-06", "tag": "PROPOSED", "text": "The Orchard Room. A small portal only a being like Nakor can use." },
+    { "date": "2026-11-09", "tag": "PROPOSED", "text": "Lunch scrolls: pets do not speak, two pets out, 150 estates, a pet store. Not yet read." },
+    { "date": "2026-11-09", "tag": "PINNED", "text": "Leaf money waits on the Council. This layer keeps no currency and no treasury." },
+    { "date": "2026-11-09", "tag": "PROCLAIMED", "text": "Seventeen public paintings hang. Sealed-shelf media do not. Gamina is curator." }
+  ]
+}

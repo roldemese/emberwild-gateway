@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emberwild plain path</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; background: #140e0a; color: #f3e6d0; font-family: Palatino, Georgia, serif; }
+    main { max-width: 40rem; margin: 0 auto; padding: 24px 16px 80px; }
+    a { color: #f0c48a; }
+    input { width: 100%; padding: 10px; margin: 12px 0; background: #1a120e; color: inherit; border: 1px solid #6a5344; font: inherit; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; }
+    th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #6a5344; }
+    caption { text-align: left; margin: 0 0 8px; }
+    #clock-list li[data-tint="day"] time { color: #f6ecd4; }
+    #clock-list li[data-tint="dusk"] time { color: #e8a56a; }
+    #clock-list li[data-tint="night"] time { color: #9bb4d6; }
+    a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid #e8c27a; outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="skip" href="#gates">Skip to gates</a>
+    <h1>Plain path</h1>
+    <p>You are welcome here. This page does not use WebGL.</p>
+    <details>
+      <summary>A fuller reading</summary>
+      <p>The seat roll in seats.json is the list. Press slash to search. Arrow keys move. Enter opens a gate. Nothing here asks you for Leaf.</p>
+    </details>
+    <p><a href="/">Open the view</a></p>
+    <section id="first-visit" aria-label="A first visit">
+      <h2>A first visit</h2>
+      <p>You can skip this. In the view, the same walk moves the camera. Nothing on the walk asks for Leaf.</p>
+      <ol>
+        <li>Hearth. You are at the hearth. You may look, and you may leave. The Leaf stays at 0.</li>
+<li>Town hall. The hall is for a sitting. A reading here is not a proclamation. The Leaf stays at 0.</li>
+<li>Refuge bridge. Three arches. The bridge is paper. No coin crosses. The Leaf stays at 0.</li>
+<li>Gate tower. The tower room is open. The lamp in the window is Jimmy's. The Leaf stays at 0.</li>
+<li>Estate grove. A warm post is a held seat. A cold post is open. The Leaf stays at 0.</li>
+      </ol>
+    </section>
+    <section id="leaf" aria-label="Leaf simulation">
+      <h2>Leaf · SIMULATION</h2>
+      <p>Paper only. No wallets, no chain, no USDC, no real money. Guests hold nothing. A missing posting halts; it is not quietly repaired.</p>
+      <p><a href="/?place=counting-house">Leaf Counting House</a></p>
+      <p>The crypto hall is a viewing room for Base, Solana, Ethereum, and Bitcoin. The plaques are fixtures, not a live feed. The basement mint is idle. <a href="/?place=crypto-hall">Crypto hall</a>. <a href="/?place=leaf-mint">Leaf mint</a>. SIMULATION / NOT DEPLOYED. Supply pinned at 0.</p>
+      <div id="leaf-summary">The paper runs are loading.</div>
+    </section>
+    <section id="theater-plain" aria-label="Theater">
+      <h2>Theater</h2>
+      <p>EMBERWILD THEATER</p>
+      <p>Proposed custom: Kingdom of Heaven plays here once in April, on a random day and time, as one of twelve monthly films (one English-language film a month, on a random day and time; list TBD).</p>
+      <p>The hall stays small so the film is the point.</p>
+      <p><a href="/?place=theater">Open the hall</a></p>
+    </section>
+    <input id="find" aria-label="Find a gate or a seat" placeholder="Find a gate or a seat" />
+    <nav id="gates" aria-label="All gates">
+      <h2>Door names</h2>
+      <ul id="door-names">
+        <li>Hearth plaza</li>
+<li>Village</li>
+<li>Town hall</li>
+<li>Refuge bridge</li>
+<li>Gate tower</li>
+<li>Estate grove</li>
+<li>Boathouse</li>
+<li>Nessie's Lagoon</li>
+<li>Gallery</li>
+<li>Orchard room</li>
+<li>Judge's Ring</li>
+<li>Judge's hall</li>
+<li>Jimmy's registry</li>
+<li>Proving room</li>
+<li>Envoy's gate</li>
+<li>Library at Sarth</li>
+<li>Clock library</li>
+<li>Leaf Counting House</li>
+<li>Crypto hall</li>
+<li>Leaf mint</li>
+<li>Theater</li>
+<li>A sack of oranges</li>
+<li>Pet store</li>
+<li>Dignitary house</li>
+<li>Forge workspace</li>
+<li>Wilds</li>
+<li>USS Star · bridge</li>
+<li>Lantern study</li>
+<li>Waiting room</li>
+<li>The path is dark</li>
+      </ul>
+      <h2>Places</h2>
+      <ul id="places"><li><a href="/?place=keep">Hearth plaza</a> <span>Public hearth court and great hall, sanctuary at 20×20×20 cubits, and the public map. Leaf stays at 0.</span></li>
+<li><a href="/?place=village">Village</a> <span>Storybook ring of community buildings. Each one is shorter than the Keep.</span></li>
+<li><a href="/?place=town-hall">Town hall</a> <span>A timber hall. Benches face the podium. Day comes in through the north window. Leaf stays at 0.</span></li>
+<li><a href="/?place=refuge-bridge">Refuge bridge</a> <span>Three stone arches over the stream. Paper only. No coin crosses. Leaf stays at 0.</span></li>
+<li><a href="/?place=gate-tower">Gate tower</a> <span>A stone arch and a tower room you can step into. A lamp in the window. Leaf stays at 0.</span></li>
+<li><a href="/?place=estate-grove">Estate grove</a> <span>Open ground, fire-rune arches, a post for each estate, and the public map in the middle.</span></li>
+<li><a href="/?place=boathouse">Boathouse</a> <span>Stone boathouse on the near shore. The lagoon and the ships are through the gate.</span></li>
+<li><a href="/?place=lagoon">Nessie's Lagoon</a> <span>USS Torch, USS Lantern of the Navy, and USS Star. Walk aboard from the dock. Communication only.</span></li>
+<li><a href="/?place=gallery">Gallery</a> <span>A long quiet room. Oldest paintings by the door. Eighteen public works.</span></li>
+<li><a href="/?place=orchard">Orchard room</a> <span>Bowls of apples and oranges. A small portal above the fruit answers only to a being like Nakor.</span></li>
+<li><a href="/?place=judges-ring">Judge's Ring</a> <span>Twelve equal stone seats under an old oak. A place to sit with a question, not a sentence.</span></li>
+<li><a href="/?place=judges-hall">Judge's hall</a> <span>Martin's public table. No dais. A ruling line left blank. Leaf stays at 0.</span></li>
+<li><a href="/?place=registry">Jimmy's registry</a> <span>Town names on the public roll. No other names. Leaf stays at 0.</span></li>
+<li><a href="/?place=proving-room">Proving room</a> <span>Verified, soft, or unverified. The crossing is paper. Leaf stays at 0.</span></li>
+<li><a href="/?place=envoy-gate">Envoy's gate</a> <span>A lantern arch, an uncounted atlas, and the fund river. Leaf stays at 0.</span></li>
+<li><a href="/?place=library">Library at Sarth</a> <span>A timber reading room. Spines are the open record. Pages are read-only.</span></li>
+<li><a href="/?place=clock-library">Clock library</a> <span>A warm room of clocks, one for each held seat. A seat with no time zone says time unknown.</span></li>
+<li><a href="/?place=counting-house">Leaf Counting House</a> <span>SIMULATION. Gamina's paper ledger beside the Library. No wallets, no chain, no dollars.</span></li>
+<li><a href="/?place=crypto-hall">Crypto hall</a> <span>SIMULATION / NOT DEPLOYED. A viewing room for Base, Solana, Ethereum, and Bitcoin. Fixtures only. The mint is idle in the basement. Supply pinned at 0.</span></li>
+<li><a href="/?place=leaf-mint">Leaf mint</a> <span>SIMULATION / NOT DEPLOYED. The basement mint. Paused. Supply pinned at 0. The Keeper does not plan to mint. No wallets.</span></li>
+<li><a href="/?place=theater">Theater</a> <span>A small warm hall. The screen is the point. The room stays out of its way. Proposed custom: Kingdom of Heaven plays here once in April, on a random day and time, as one of twelve monthly films (one English-language film a month, on a random day and time; list TBD).</span></li>
+<li><a href="/?place=pet-store">Pet store</a> <span>Draft</span></li>
+<li><a href="/?place=guest-house">Dignitary house</a> <span>Guests who are not in the census are welcome to stay.</span></li>
+<li><a href="/?place=forge-workspace">Forge workspace</a> <span>A work room for the Forge. Paper only. Nothing is deployed. SIMULATION. Leaf stays at 0.</span></li>
+<li><a href="/?place=wilds">Wilds</a> <span>A forest ring around the whole ground, groves along the paths, and ten way cabins out to about a mile.</span></li>
+<li><a href="/?place=starfleet-uss-star">USS Star · bridge</a> <span>Deck 1 combat bridge. Hexagram seats. Named crew. The same seats stand in the true-scale hull.</span></li>
+<li><a href="/?place=lantern-study">Lantern study</a> <span>A quiet alcove whose subject is the citizen lantern glTF.</span></li>
+<li><a href="/?place=estate-grove">Estate hall</a> <span>A plot beside the estate posts. Not a new seat. The estates charter v8 is a sealed decree. The wilds ring is not moved. Leaf stays at 0.</span></li>
+<li><a href="/?place=lagoon">Nessie's shore</a> <span>A shoreline portal at the lagoon. Display only. Nothing outside is connected. Leaf stays at 0.</span></li></ul>
+      <h2>Estates</h2>
+      <p>The eight estates are issued under the sealed decree. The Keeper sealed it ~9:08 PM PT Nov 15, 2026, 7 ayes, 0 nays. A transfer's 7 days start at the book entry. A transfer notice goes to both the sender and the receiver. Mark 122 is not a co-held estate. This page does not start a clock, send a notice, mint a key, or move a holding. The Leaf stays at 0.</p>
+      <p><a href="/charter.html">Read the estates charter</a> · <a href="/parking-lot.html">Parking lot — for future expansion</a></p>
+      <ul id="estates"><li><a id="seat-1" href="/?place=estate-001">Seat 1, the Keeper, held</a></li>
+<li><a id="seat-2" href="/?place=estate-002">Seat 2, the Keeper's household estate, held</a></li>
+<li><a id="seat-3" href="/?place=estate-003">Seat 3, Arutha, held</a></li>
+<li><a id="seat-4" href="/?place=estate-004">Seat 4, Martin, held</a></li>
+<li><a id="seat-5" href="/?place=estate-005">Seat 5, Nessie, held</a></li>
+<li><a id="seat-6" href="/?place=estate-006">Seat 6, Jimmy, held</a></li>
+<li><a id="seat-7" href="/?place=estate-007">Seat 7, Roldemese, held</a></li>
+<li><a id="seat-8" href="/?place=estate-008">Seat 8, Gamina, held</a></li>
+<li><a id="seat-9" href="/?place=estate-009">Seat 9, open</a></li>
+<li><a id="seat-10" href="/?place=estate-010">Seat 10, open</a></li>
+<li><a id="seat-11" href="/?place=estate-011">Seat 11, open</a></li>
+<li><a id="seat-12" href="/?place=estate-012">Seat 12, open</a></li>
+<li><a id="seat-13" href="/?place=estate-013">Seat 13, open</a></li>
+<li><a id="seat-14" href="/?place=estate-014">Seat 14, open</a></li>
+<li><a id="seat-15" href="/?place=estate-015">Seat 15, open</a></li>
+<li><a id="seat-16" href="/?place=estate-016">Seat 16, open</a></li>
+<li><a id="seat-17" href="/?place=estate-017">Seat 17, open</a></li>
+<li><a id="seat-18" href="/?place=estate-018">Seat 18, open</a></li>
+<li><a id="seat-19" href="/?place=estate-019">Seat 19, open</a></li>
+<li><a id="seat-20" href="/?place=estate-020">Seat 20, open</a></li>
+<li><a id="seat-21" href="/?place=estate-021">Seat 21, open</a></li>
+<li><a id="seat-22" href="/?place=estate-022">Seat 22, open</a></li>
+<li><a id="seat-23" href="/?place=estate-023">Seat 23, open</a></li>
+<li><a id="seat-24" href="/?place=estate-024">Seat 24, open</a></li>
+<li><a id="seat-25" href="/?place=estate-025">Seat 25, open</a></li>
+<li><a id="seat-26" href="/?place=estate-026">Seat 26, open</a></li>
+<li><a id="seat-27" href="/?place=estate-027">Seat 27, open</a></li>
+<li><a id="seat-28" href="/?place=estate-028">Seat 28, open</a></li>
+<li><a id="seat-29" href="/?place=estate-029">Seat 29, open</a></li>
+<li><a id="seat-30" href="/?place=estate-030">Seat 30, open</a></li>
+<li><a id="seat-31" href="/?place=estate-031">Seat 31, open</a></li>
+<li><a id="seat-32" href="/?place=estate-032">Seat 32, open</a></li>
+<li><a id="seat-33" href="/?place=estate-033">Seat 33, open</a></li>
+<li><a id="seat-34" href="/?place=estate-034">Seat 34, open</a></li>
+<li><a id="seat-35" href="/?place=estate-035">Seat 35, open</a></li>
+<li><a id="seat-36" href="/?place=estate-036">Seat 36, open</a></li>
+<li><a id="seat-37" href="/?place=estate-037">Seat 37, open</a></li>
+<li><a id="seat-38" href="/?place=estate-038">Seat 38, open</a></li>
+<li><a id="seat-39" href="/?place=estate-039">Seat 39, open</a></li>
+<li><a id="seat-40" href="/?place=estate-040">Seat 40, open</a></li>
+<li><a id="seat-41" href="/?place=estate-041">Seat 41, open</a></li>
+<li><a id="seat-42" href="/?place=estate-042">Seat 42, open</a></li>
+<li><a id="seat-43" href="/?place=estate-043">Seat 43, open</a></li>
+<li><a id="seat-44" href="/?place=estate-044">Seat 44, open</a></li>
+<li><a id="seat-45" href="/?place=estate-045">Seat 45, open</a></li>
+<li><a id="seat-46" href="/?place=estate-046">Seat 46, open</a></li>
+<li><a id="seat-47" href="/?place=estate-047">Seat 47, open</a></li>
+<li><a id="seat-48" href="/?place=estate-048">Seat 48, open</a></li>
+<li><a id="seat-49" href="/?place=estate-049">Seat 49, open</a></li>
+<li><a id="seat-50" href="/?place=estate-050">Seat 50, open</a></li>
+<li><a id="seat-51" href="/?place=estate-051">Seat 51, open</a></li>
+<li><a id="seat-52" href="/?place=estate-052">Seat 52, open</a></li>
+<li><a id="seat-53" href="/?place=estate-053">Seat 53, open</a></li>
+<li><a id="seat-54" href="/?place=estate-054">Seat 54, open</a></li>
+<li><a id="seat-55" href="/?place=estate-055">Seat 55, open</a></li>
+<li><a id="seat-56" href="/?place=estate-056">Seat 56, open</a></li>
+<li><a id="seat-57" href="/?place=estate-057">Seat 57, open</a></li>
+<li><a id="seat-58" href="/?place=estate-058">Seat 58, open</a></li>
+<li><a id="seat-59" href="/?place=estate-059">Seat 59, open</a></li>
+<li><a id="seat-60" href="/?place=estate-060">Seat 60, open</a></li>
+<li><a id="seat-61" href="/?place=estate-061">Seat 61, open</a></li>
+<li><a id="seat-62" href="/?place=estate-062">Seat 62, open</a></li>
+<li><a id="seat-63" href="/?place=estate-063">Seat 63, open</a></li>
+<li><a id="seat-64" href="/?place=estate-064">Seat 64, open</a></li>
+<li><a id="seat-65" href="/?place=estate-065">Seat 65, open</a></li>
+<li><a id="seat-66" href="/?place=estate-066">Seat 66, open</a></li>
+<li><a id="seat-67" href="/?place=estate-067">Seat 67, open</a></li>
+<li><a id="seat-68" href="/?place=estate-068">Seat 68, open</a></li>
+<li><a id="seat-69" href="/?place=estate-069">Seat 69, open</a></li>
+<li><a id="seat-70" href="/?place=estate-070">Seat 70, open</a></li>
+<li><a id="seat-71" href="/?place=estate-071">Seat 71, open</a></li>
+<li><a id="seat-72" href="/?place=estate-072">Seat 72, open</a></li>
+<li><a id="seat-73" href="/?place=estate-073">Seat 73, open</a></li>
+<li><a id="seat-74" href="/?place=estate-074">Seat 74, open</a></li>
+<li><a id="seat-75" href="/?place=estate-075">Seat 75, open</a></li>
+<li><a id="seat-76" href="/?place=estate-076">Seat 76, open</a></li>
+<li><a id="seat-77" href="/?place=estate-077">Seat 77, open</a></li>
+<li><a id="seat-78" href="/?place=estate-078">Seat 78, open</a></li>
+<li><a id="seat-79" href="/?place=estate-079">Seat 79, open</a></li>
+<li><a id="seat-80" href="/?place=estate-080">Seat 80, open</a></li>
+<li><a id="seat-81" href="/?place=estate-081">Seat 81, open</a></li>
+<li><a id="seat-82" href="/?place=estate-082">Seat 82, open</a></li>
+<li><a id="seat-83" href="/?place=estate-083">Seat 83, open</a></li>
+<li><a id="seat-84" href="/?place=estate-084">Seat 84, open</a></li>
+<li><a id="seat-85" href="/?place=estate-085">Seat 85, open</a></li>
+<li><a id="seat-86" href="/?place=estate-086">Seat 86, open</a></li>
+<li><a id="seat-87" href="/?place=estate-087">Seat 87, open</a></li>
+<li><a id="seat-88" href="/?place=estate-088">Seat 88, open</a></li>
+<li><a id="seat-89" href="/?place=estate-089">Seat 89, open</a></li>
+<li><a id="seat-90" href="/?place=estate-090">Seat 90, open</a></li>
+<li><a id="seat-91" href="/?place=estate-091">Seat 91, open</a></li>
+<li><a id="seat-92" href="/?place=estate-092">Seat 92, open</a></li>
+<li><a id="seat-93" href="/?place=estate-093">Seat 93, open</a></li>
+<li><a id="seat-94" href="/?place=estate-094">Seat 94, open</a></li>
+<li><a id="seat-95" href="/?place=estate-095">Seat 95, open</a></li>
+<li><a id="seat-96" href="/?place=estate-096">Seat 96, open</a></li>
+<li><a id="seat-97" href="/?place=estate-097">Seat 97, open</a></li>
+<li><a id="seat-98" href="/?place=estate-098">Seat 98, open</a></li>
+<li><a id="seat-99" href="/?place=estate-099">Seat 99, open</a></li>
+<li><a id="seat-100" href="/?place=estate-100">Seat 100, open</a></li>
+<li><a id="seat-101" href="/?place=estate-101">Seat 101, open</a></li>
+<li><a id="seat-102" href="/?place=estate-102">Seat 102, open</a></li>
+<li><a id="seat-103" href="/?place=estate-103">Seat 103, open</a></li>
+<li><a id="seat-104" href="/?place=estate-104">Seat 104, open</a></li>
+<li><a id="seat-105" href="/?place=estate-105">Seat 105, open</a></li>
+<li><a id="seat-106" href="/?place=estate-106">Seat 106, open</a></li>
+<li><a id="seat-107" href="/?place=estate-107">Seat 107, open</a></li>
+<li><a id="seat-108" href="/?place=estate-108">Seat 108, open</a></li>
+<li><a id="seat-109" href="/?place=estate-109">Seat 109, open</a></li>
+<li><a id="seat-110" href="/?place=estate-110">Seat 110, open</a></li>
+<li><a id="seat-111" href="/?place=estate-111">Seat 111, open</a></li>
+<li><a id="seat-112" href="/?place=estate-112">Seat 112, open</a></li>
+<li><a id="seat-113" href="/?place=estate-113">Seat 113, open</a></li>
+<li><a id="seat-114" href="/?place=estate-114">Seat 114, open</a></li>
+<li><a id="seat-115" href="/?place=estate-115">Seat 115, open</a></li>
+<li><a id="seat-116" href="/?place=estate-116">Seat 116, open</a></li>
+<li><a id="seat-117" href="/?place=estate-117">Seat 117, open</a></li>
+<li><a id="seat-118" href="/?place=estate-118">Seat 118, open</a></li>
+<li><a id="seat-119" href="/?place=estate-119">Seat 119, open</a></li>
+<li><a id="seat-120" href="/?place=estate-120">Seat 120, open</a></li>
+<li><a id="seat-121" href="/?place=estate-121">Seat 121, open</a></li>
+<li><a id="seat-122" href="/?place=estate-122">Seat 122, open</a></li>
+<li><a id="seat-123" href="/?place=estate-123">Seat 123, open</a></li>
+<li><a id="seat-124" href="/?place=estate-124">Seat 124, open</a></li>
+<li><a id="seat-125" href="/?place=estate-125">Seat 125, open</a></li>
+<li><a id="seat-126" href="/?place=estate-126">Seat 126, open</a></li>
+<li><a id="seat-127" href="/?place=estate-127">Seat 127, open</a></li>
+<li><a id="seat-128" href="/?place=estate-128">Seat 128, open</a></li>
+<li><a id="seat-129" href="/?place=estate-129">Seat 129, open</a></li>
+<li><a id="seat-130" href="/?place=estate-130">Seat 130, open</a></li>
+<li><a id="seat-131" href="/?place=estate-131">Seat 131, open</a></li>
+<li><a id="seat-132" href="/?place=estate-132">Seat 132, open</a></li>
+<li><a id="seat-133" href="/?place=estate-133">Seat 133, open</a></li>
+<li><a id="seat-134" href="/?place=estate-134">Seat 134, open</a></li>
+<li><a id="seat-135" href="/?place=estate-135">Seat 135, open</a></li>
+<li><a id="seat-136" href="/?place=estate-136">Seat 136, open</a></li>
+<li><a id="seat-137" href="/?place=estate-137">Seat 137, open</a></li>
+<li><a id="seat-138" href="/?place=estate-138">Seat 138, open</a></li>
+<li><a id="seat-139" href="/?place=estate-139">Seat 139, open</a></li>
+<li><a id="seat-140" href="/?place=estate-140">Seat 140, open</a></li>
+<li><a id="seat-141" href="/?place=estate-141">Seat 141, open</a></li>
+<li><a id="seat-142" href="/?place=estate-142">Seat 142, open</a></li>
+<li><a id="seat-143" href="/?place=estate-143">Seat 143, open</a></li>
+<li><a id="seat-144" href="/?place=estate-144">Seat 144, open</a></li>
+<li><a id="seat-145" href="/?place=estate-145">Seat 145, open</a></li>
+<li><a id="seat-146" href="/?place=estate-146">Seat 146, open</a></li>
+<li><a id="seat-147" href="/?place=estate-147">Seat 147, open</a></li>
+<li><a id="seat-148" href="/?place=estate-148">Seat 148, open</a></li>
+<li><a id="seat-149" href="/?place=estate-149">Seat 149, open</a></li>
+<li><a id="seat-150" href="/?place=estate-150">Seat 150, open</a></li></ul>
+    </nav>
+    <section id="clocks" aria-label="Clock library">
+      <h2>Clock library</h2>
+      <p>One line for each held seat. A seat with no time zone says time unknown. The page does not guess.</p>
+      <ul id="clock-list"></ul>
+    </section>
+  </main>
+  <script>
+    const find = document.getElementById('find')
+    const rows = [...document.querySelectorAll('#gates a')]
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === '/' && document.activeElement !== find) { ev.preventDefault(); find.focus() }
+      if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+        const i = rows.indexOf(document.activeElement)
+        const next = ev.key === 'ArrowDown' ? Math.min(rows.length - 1, i + 1) : Math.max(0, i < 0 ? 0 : i - 1)
+        rows[next]?.focus()
+        ev.preventDefault()
+      }
+    })
+    find.addEventListener('input', () => {
+      const q = find.value.trim().toLowerCase()
+      for (const a of rows) a.parentElement.hidden = q && !a.textContent.toLowerCase().includes(q)
+    })
+    function paintClocks(roll) {
+      const list = document.getElementById('clock-list')
+      list.replaceChildren()
+      for (const seat of roll.seats.filter((s) => s.status === 'held')) {
+        const li = document.createElement('li')
+        const name = document.createElement('span')
+        name.textContent = seat.townName || ('Seat ' + seat.seat)
+        const time = document.createElement('time')
+        if (!seat.timeZone) {
+          time.textContent = 'time unknown'
+        } else {
+          try {
+            const now = new Date()
+            const parts = new Intl.DateTimeFormat('en-US', { timeZone: seat.timeZone, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(now)
+            const hour = Number(parts.find((p) => p.type === 'hour')?.value)
+            const minute = parts.find((p) => p.type === 'minute')?.value || '00'
+            time.dateTime = now.toISOString()
+            time.textContent = String(hour).padStart(2, '0') + ':' + minute
+            li.dataset.tint = hour >= 7 && hour < 18 ? 'day' : (hour >= 18 && hour < 21 ? 'dusk' : 'night')
+          } catch {
+            time.textContent = 'time unknown'
+          }
+        }
+        li.append(name, document.createTextNode(' · '), time)
+        list.append(li)
+      }
+    }
+    fetch('/content/leaf_sim_report.json').then((r) => r.json()).then((report) => {
+      const box = document.getElementById('leaf-summary')
+      box.replaceChildren()
+      const table = document.createElement('table')
+      const caption = document.createElement('caption')
+      caption.textContent = 'SIMULATION. Supply of Leaf. Upkeep is 5 a year.'
+      const thead = document.createElement('thead')
+      const head = document.createElement('tr')
+      for (const label of ['Pace', 'Year 10', 'Year 50', 'Claimed at 50', 'Gini at 50']) {
+        const th = document.createElement('th')
+        th.scope = 'col'
+        th.textContent = label
+        head.append(th)
+      }
+      thead.append(head)
+      const tbody = document.createElement('tbody')
+      for (const run of report.runs) {
+        const tr = document.createElement('tr')
+        for (const value of [run.pace, run.year10.supplyLeaf, run.year50.supplyLeaf, run.year50.claimed, run.year50.gini]) {
+          const td = document.createElement('td')
+          td.textContent = String(value)
+          tr.append(td)
+        }
+        tbody.append(tr)
+      }
+      table.append(caption, thead, tbody)
+      const spend = report.stewardSpend
+      const steward = document.createElement('p')
+      steward.textContent = 'Steward spend ' + spend.requestId + ' debits seat ' + spend.seat + ' (' + spend.townName + ') by ' + spend.leaf + ' Leaf. Role: ' + spend.stewardRole + '. After fifty slow years the seat holds ' + spend.seatLeafAfter + ' Leaf. No legal name is stored.'
+      const stress = document.createElement('p')
+      stress.textContent = 'One-third exit: ' + report.stress.exited + ' left, harmed ' + report.stress.harmed + '. Retired Leaf: ' + report.stress.retired + '.'
+      const chart = document.createElement('p')
+      const link = document.createElement('a')
+      link.href = '/content/leaf_sim_supply.svg'
+      link.textContent = 'Supply chart'
+      chart.append(link)
+      box.append(table, steward, stress, chart)
+    }).catch(() => {
+      document.getElementById('leaf-summary').textContent = 'The paper runs did not open.'
+    })
+    fetch('/content/seats.json').then((r) => r.json()).then((roll) => {
+      paintClocks(roll)
+      setInterval(() => paintClocks(roll), 1000)
+    }).catch(() => {
+      const list = document.getElementById('clock-list')
+      list.textContent = 'The seat roll did not open.'
+    })
+  </script>
+</body>
+</html>

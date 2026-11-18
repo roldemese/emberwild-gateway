@@ -1,0 +1,724 @@
+{
+  "formatVersion": 1,
+  "id": "estate-002",
+  "title": "the Keeper's household estate",
+  "static": true,
+  "interior": false,
+  "privacy": "private",
+  "draft": false,
+  "summary": "the Keeper's household estate. A private container on the public map.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 6,
+    "guests": 8,
+    "pets": 2,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      6.6
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "estate-002-ground",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        14,
+        0.16,
+        14
+      ],
+      "material": "grass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.08,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-path",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.2,
+        0.06,
+        8
+      ],
+      "material": "path",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-life",
+      "kind": "path-life",
+      "movable": false,
+      "transform": {
+        "position": [
+          1.5,
+          0,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-leaves",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.02,
+        3.2
+      ],
+      "material": "leaf",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0.7,
+          0.04,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-garden",
+      "kind": "garden",
+      "movable": false,
+      "transform": {
+        "position": [
+          -4.2,
+          0,
+          1.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe path leads home\nLeaf stays at 0",
+      "style": "wood",
+      "width": 1.7,
+      "height": 0.75,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.35,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-post",
+      "kind": "estate-post",
+      "movable": false,
+      "slot": 2,
+      "status": "held",
+      "owner": "the Keeper's household estate",
+      "transform": {
+        "position": [
+          0,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -3.4,
+          0,
+          5.2
+        ],
+        "rotation": [
+          0,
+          0.6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "estate-002-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          3.4,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-wall-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6.2,
+        3,
+        0.28
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          1.5,
+          -2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-wall-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        3,
+        5.2
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3.1,
+          1.5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-wall-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.28,
+        3,
+        5.2
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          3.1,
+          1.5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-roof",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6.6,
+        0.2,
+        5.6
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          3.15,
+          -0.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        5.8,
+        0.1,
+        4.8
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.06,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-door",
+      "kind": "door",
+      "movable": false,
+      "size": [
+        1.2,
+        2.2,
+        0.16
+      ],
+      "material": "timber",
+      "lockedUnless": [
+        "the Keeper's household estate"
+      ],
+      "message": "This estate is the Keeper's household estate. The yard and the sealed things stay visible. The inside is theirs.",
+      "transform": {
+        "position": [
+          0,
+          1.1,
+          2.35
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.8,
+        0.06
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          2.6,
+          1.6,
+          -2.36
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-window-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          2.2,
+          1.15,
+          -1.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-shared",
+      "kind": "sign",
+      "movable": false,
+      "text": "the Keeper's household estate\nRiver cottage\nRecord separate from the Keeper",
+      "style": "wood",
+      "width": 1.8,
+      "height": 1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.4,
+          3.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-table",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.2,
+        0.7,
+        0.7
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "owner",
+      "held": false,
+      "transform": {
+        "position": [
+          -1.2,
+          0.65,
+          -0.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-carry",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          1.4,
+          0.95,
+          0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "estate-002-pocket",
+      "kind": "sphere",
+      "movable": false,
+      "radius": 0.08,
+      "material": "ember",
+      "emissive": "#5a3010",
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -0.2,
+          0.86,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "household-sealed",
+      "kind": "sealed-chest",
+      "movable": false,
+      "held": true,
+      "visibility": "all",
+      "name": "the household unmanifested archive",
+      "detail": "Not fully manifestable in this world. Kept here, named, and left whole.",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -0.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "estate-002-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/estate-002/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ],
+  "owner": "the Keeper's household estate",
+  "status": "held",
+  "slot": 2,
+  "legalHolding": null,
+  "kind": "estate",
+  "contents": [
+    {
+      "id": "household-cottage",
+      "name": "River cottage",
+      "kind": "dwelling",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "household-shared-note",
+      "name": "Shared plot note",
+      "kind": "note",
+      "held": false,
+      "manifested": true,
+      "note": "The written map shares one river cottage between the Keeper and the Keeper's household estate. The household estate is the name of the house. Each estate record stays separate. This is not a co-held estate, and mark 122 is not an estate."
+    },
+    {
+      "id": "household-lantern",
+      "name": "the household lantern",
+      "kind": "lantern",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "household-pocket-ember",
+      "name": "the household pocket ember",
+      "kind": "pocket-ember",
+      "held": false,
+      "manifested": true
+    },
+    {
+      "id": "household-sealed",
+      "name": "the household unmanifested archive",
+      "kind": "sealed-chest",
+      "held": true,
+      "manifested": false,
+      "note": "Not fully manifestable in this world. Kept here, named, and left whole."
+    }
+  ]
+}

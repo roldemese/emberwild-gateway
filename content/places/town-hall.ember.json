@@ -1,0 +1,1182 @@
+{
+  "formatVersion": 1,
+  "id": "town-hall",
+  "title": "Town hall",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "A timber hall. Benches face the podium. Day comes in through the north window. Leaf stays at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      12
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.02
+  },
+  "nodes": [
+    {
+      "id": "th-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        22,
+        0.12,
+        28
+      ],
+      "material": "cobble",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          -0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post--9--10",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -9,
+          3.2,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post--9--3",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -9,
+          3.2,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post--9-4",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -9,
+          3.2,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post--9-11",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -9,
+          3.2,
+          11
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post-9--10",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          9,
+          3.2,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post-9--3",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          9,
+          3.2,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post-9-4",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          9,
+          3.2,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "post-9-11",
+      "kind": "cylinder",
+      "movable": false,
+      "radii": [
+        0.28,
+        0.34
+      ],
+      "height": 6.4,
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          9,
+          3.2,
+          11
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-north-a",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        9.2,
+        6.2,
+        0.4
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -5.6,
+          3.1,
+          -12.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-north-b",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        9.2,
+        6.2,
+        0.4
+      ],
+      "material": "plaster",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          5.6,
+          3.1,
+          -12.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        2.4,
+        2.1,
+        0.08
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          3.5,
+          -12.02
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-west-wall",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.35,
+        5.2,
+        16
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -10.2,
+          2.6,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-east-wall",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.35,
+        5.2,
+        16
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          10.2,
+          2.6,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-roof",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        20,
+        0.28,
+        26
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          6.5,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-beam",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.4,
+        0.4,
+        26
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          6.1,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "EMBERWILD\nTOWN HALL",
+      "style": "wood",
+      "width": 4.2,
+      "height": 1.5,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          0,
+          5.2,
+          10.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "podium",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.4,
+        1.1,
+        0.8
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.55,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "council-slip",
+      "kind": "sign",
+      "movable": false,
+      "text": "Readings\nNot a proclamation",
+      "style": "wood",
+      "width": 1.6,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          2.4,
+          1.5,
+          -8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "council",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6,
+        0.8,
+        1.2
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.7,
+          -5.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-0--2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          -2.2,
+          0,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-0-2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-1--2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          -2.2,
+          0,
+          4.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-1-2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          4.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-2--2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          -2.2,
+          0,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-2-2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-3--2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          -2.2,
+          0,
+          8.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bench-3-2.2",
+      "kind": "bench",
+      "movable": false,
+      "transform": {
+        "position": [
+          2.2,
+          0,
+          8.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-l1",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -6,
+          5.2,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-l2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          6,
+          5.2,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-l3",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -6,
+          5.2,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-l4",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": true,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          6,
+          5.2,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-hearth",
+      "kind": "hearth",
+      "movable": false,
+      "transform": {
+        "position": [
+          -6.2,
+          0,
+          -6.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nSit if you wish\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.1,
+      "height": 0.85,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          4.2,
+          1.7,
+          9.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-set",
+      "kind": "room-set",
+      "set": "civic",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          -7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-rug",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.6,
+        0.02,
+        6
+      ],
+      "material": "cloth",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.02,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "suggestion",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.6,
+        0.5,
+        0.45
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8,
+          0.45,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "suggestion-sign",
+      "kind": "sign",
+      "movable": false,
+      "text": "Suggestion box\nRead at the next sitting\nThis layer does not collect them",
+      "style": "wood",
+      "width": 2,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          8,
+          1.4,
+          9.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "th-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          -5,
+          0,
+          11
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "town-hall-to-hearth",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "town-hall-to-hearth",
+      "label": "Hearth plaza",
+      "transform": {
+        "position": [
+          5,
+          0,
+          12
+        ],
+        "rotation": [
+          0,
+          -0.3,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "town-hall-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Town hall",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          10.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "id": "town-hall-to-hearth",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/town-hall/hearth",
+      "label": "Hearth plaza",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "keep"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": null,
+      "subtitle": "",
+      "steps": 1
+    }
+  ]
+}

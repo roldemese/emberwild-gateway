@@ -1,0 +1,2085 @@
+{
+  "formatVersion": 1,
+  "id": "keep",
+  "title": "Hearth plaza",
+  "static": true,
+  "interior": false,
+  "privacy": "public",
+  "draft": false,
+  "summary": "Public hearth court and great hall, sanctuary at 20×20×20 cubits, and the public map. Leaf stays at 0.",
+  "units": {
+    "cubitMeters": 0.457
+  },
+  "capacity": {
+    "beings": 150,
+    "guests": 150,
+    "pets": 300,
+    "overflow": "waiting-room"
+  },
+  "voice": {
+    "enabled": false,
+    "edition": 2,
+    "hook": "edition-2",
+    "sfu": null,
+    "note": "Edition 1 is text chat. Voice is a later edition. This field is a hook, not a service."
+  },
+  "spawn": {
+    "position": [
+      0,
+      0,
+      14
+    ],
+    "yaw": 3.141592653589793
+  },
+  "spawns": {},
+  "atmosphere": {
+    "fogDensity": 0.007
+  },
+  "nodes": [
+    {
+      "id": "keep-court",
+      "kind": "ground",
+      "material": "earth",
+      "radius": 74,
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          -0.02,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-birds",
+      "kind": "birds",
+      "movable": false,
+      "count": 5,
+      "transform": {
+        "position": [
+          -6,
+          0,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-hearth",
+      "kind": "hearth",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "council-ring",
+      "kind": "council-ring",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "federal-oak",
+      "kind": "oak",
+      "movable": false,
+      "transform": {
+        "position": [
+          9.4,
+          0,
+          8.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "resident-ring",
+      "kind": "resident-ring",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-leaves",
+      "kind": "leaves",
+      "movable": false,
+      "count": 140,
+      "radius": 7,
+      "transform": {
+        "position": [
+          0,
+          0.05,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hall-north",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        6,
+        0.55
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          3,
+          -15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-west",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.55,
+        6,
+        10
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -8,
+          3,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-east-a",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.55,
+        6,
+        3.6
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8,
+          3,
+          -13.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-east-b",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.55,
+        6,
+        4.2
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8,
+          3,
+          -6.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.12,
+        3.2,
+        1.4
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          8,
+          3.1,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "beam-a",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.35,
+        0.35,
+        10
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -3,
+          5.6,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "beam-b",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.35,
+        0.35,
+        10
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          3,
+          5.6,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "beam-c",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16,
+        0.28,
+        0.4
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          5.8,
+          -10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-ceiling",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        15.2,
+        0.18,
+        7.2
+      ],
+      "material": "timberDark",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          5.95,
+          -11.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-welcome",
+      "kind": "sign",
+      "movable": false,
+      "text": "Welcome\nThe great hall is open\nLeaf stays at 0",
+      "style": "wood",
+      "width": 2.2,
+      "height": 0.85,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.2,
+          2.2,
+          -6.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "hall-set",
+      "kind": "room-set",
+      "set": "hall",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          0,
+          -9.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "hall"
+    },
+    {
+      "id": "court-kettle",
+      "kind": "room-set",
+      "set": "kettle",
+      "movable": false,
+      "transform": {
+        "position": [
+          1.6,
+          0,
+          1.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "silent-walk",
+      "kind": "silent-walk",
+      "movable": false,
+      "transform": {
+        "position": [
+          6.8,
+          0,
+          4.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "lantern--5.2--9.2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -5.2,
+          2.1,
+          -9.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "lantern-5.2--9.2",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          5.2,
+          2.1,
+          -9.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "lantern--5.2-3.4",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -5.2,
+          2.1,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "lantern-5.2-3.4",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": false,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          5.2,
+          2.1,
+          3.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "lantern-porch",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": false,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -4.5,
+          2.4,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "sanctuary-plinth-0",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        16.452,
+        1.1,
+        16.452
+      ],
+      "material": "moss",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          0.55,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-plinth-1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        12.796000000000001,
+        1,
+        12.796000000000001
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          1.6,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-plinth-2",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        10.968,
+        0.9,
+        10.968
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          2.5500000000000003,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-pillar--1--1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.85,
+        9.14,
+        0.85
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4.12,
+          7.57,
+          -24.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-pillar-1--1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.85,
+        9.14,
+        0.85
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.12,
+          7.57,
+          -24.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-pillar-1-1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.85,
+        9.14,
+        0.85
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.12,
+          7.57,
+          -15.879999999999999
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-pillar--1-1",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.85,
+        9.14,
+        0.85
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4.12,
+          7.57,
+          -15.879999999999999
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-lintel-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        9.14,
+        0.7,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          11.790000000000001,
+          -24.12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-lintel-s",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        9.14,
+        0.7,
+        0.7
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          0,
+          11.790000000000001,
+          -15.879999999999999
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-lintel-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.7,
+        9.14
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -4.12,
+          11.790000000000001,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-lintel-e",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.7,
+        0.7,
+        9.14
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          4.12,
+          11.790000000000001,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        7.340000000000001,
+        0.08,
+        7.340000000000001
+      ],
+      "material": "stone",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "dress": "nave",
+      "transform": {
+        "position": [
+          0,
+          3.06,
+          -20
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "sanctuary-plaque",
+      "kind": "sign",
+      "movable": false,
+      "text": "Sanctuary\n20 × 20 × 20 cubits\n1 Kings 6:20",
+      "style": "wood",
+      "width": 1.8,
+      "height": 1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          4.2,
+          4.6,
+          -14.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "keep-house",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        27.42,
+        13.71,
+        9.14
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "dress": "house",
+      "transform": {
+        "position": [
+          -22,
+          6.855,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "house"
+    },
+    {
+      "id": "keep-porch",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        4.57,
+        0.18,
+        9.14
+      ],
+      "material": "timber",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "dress": "porch",
+      "transform": {
+        "position": [
+          -6.004999999999999,
+          0.12,
+          -2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "house"
+    },
+    {
+      "id": "house-plaque",
+      "kind": "sign",
+      "movable": false,
+      "text": "House 60 × 20 × 30 cubits\n1 Kings 6:2\nPorch 20 × 10\n1 Kings 6:3",
+      "style": "wood",
+      "width": 2,
+      "height": 1.1,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -12.2,
+          2.2,
+          4.2
+        ],
+        "rotation": [
+          0,
+          0.2,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "house"
+    },
+    {
+      "id": "wide-base",
+      "kind": "sign",
+      "movable": false,
+      "text": "Wide base\nHeight asks for width",
+      "style": "wood",
+      "width": 1.5,
+      "height": 0.7,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          6.5,
+          4.4,
+          -14.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "sanctuary"
+    },
+    {
+      "id": "wing-floor",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6.2,
+        0.16,
+        4.4
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -14.5,
+          0.08,
+          8.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "wing-n",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6.2,
+        3,
+        0.25
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -14.5,
+          1.5,
+          6.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "wing-s",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        6.2,
+        3,
+        0.25
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -14.5,
+          1.5,
+          10.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "wing-w",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.25,
+        3,
+        4.2
+      ],
+      "material": "stone",
+      "collider": true,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -17.5,
+          1.5,
+          8.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "keep-private-door",
+      "kind": "door",
+      "movable": false,
+      "size": [
+        1.2,
+        2.2,
+        0.18
+      ],
+      "material": "timber",
+      "lockedUnless": [
+        "the Keeper",
+        "Arutha"
+      ],
+      "message": "These rooms are the Keeper and Arutha's. The hearth court is open.",
+      "transform": {
+        "position": [
+          -11.4,
+          1.1,
+          8.2
+        ],
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "study-desk",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        1.2,
+        0.75,
+        0.65
+      ],
+      "material": "timber",
+      "collider": false,
+      "visibility": "owner",
+      "held": false,
+      "transform": {
+        "position": [
+          -15.6,
+          0.7,
+          7.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "arutha-study-lamp",
+      "kind": "lantern",
+      "movable": false,
+      "alwaysLit": true,
+      "light": true,
+      "hanging": false,
+      "variant": "cage",
+      "transform": {
+        "position": [
+          -16.4,
+          1.15,
+          9.4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "study-window",
+      "kind": "box",
+      "movable": false,
+      "size": [
+        0.8,
+        0.7,
+        0.08
+      ],
+      "material": "glass",
+      "collider": false,
+      "visibility": "all",
+      "held": false,
+      "transform": {
+        "position": [
+          -14.5,
+          1.7,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "private-set",
+      "kind": "room-set",
+      "set": "private",
+      "movable": false,
+      "visibility": "owner",
+      "transform": {
+        "position": [
+          -15.4,
+          0,
+          9.1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "wing"
+    },
+    {
+      "id": "keep-map",
+      "kind": "map-table",
+      "movable": false,
+      "label": "PUBLIC MAP",
+      "transform": {
+        "position": [
+          6.6,
+          0,
+          8.2
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-map-note",
+      "kind": "sign",
+      "movable": false,
+      "text": "PUBLIC MAP\nEvery gate\nEvery estate",
+      "style": "wood",
+      "width": 1.8,
+      "height": 0.9,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          6.6,
+          2.15,
+          9.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-to-star",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "keep-to-star",
+      "label": "USS Star",
+      "transform": {
+        "position": [
+          -8.2,
+          0,
+          9.4
+        ],
+        "rotation": [
+          0,
+          0.9,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "gates"
+    },
+    {
+      "id": "keep-to-wilds",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "keep-to-wilds",
+      "label": "Wilds",
+      "transform": {
+        "position": [
+          12.4,
+          0,
+          2.2
+        ],
+        "rotation": [
+          0,
+          -0.8,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "gates"
+    },
+    {
+      "id": "keep-to-lantern-study",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "keep-to-lantern-study",
+      "label": "Lantern study",
+      "transform": {
+        "position": [
+          -10.2,
+          0,
+          11.4
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "gates"
+    },
+    {
+      "id": "keep-lantern-gltf",
+      "kind": "gltf",
+      "movable": false,
+      "uri": "models/citizen-lantern.gltf",
+      "transform": {
+        "position": [
+          6.2,
+          1.05,
+          7.6
+        ],
+        "rotation": [
+          0,
+          0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hero-tree-0",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#c4511a",
+      "scale": 0.9,
+      "transform": {
+        "position": [
+          -13,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hero-tree-1",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#e08a2a",
+      "scale": 1.05,
+      "transform": {
+        "position": [
+          13,
+          0,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hero-tree-2",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#c4511a",
+      "scale": 1.2,
+      "transform": {
+        "position": [
+          -12,
+          0,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hero-tree-3",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#e08a2a",
+      "scale": 0.9,
+      "transform": {
+        "position": [
+          12,
+          0,
+          -7
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hero-tree-4",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#c4511a",
+      "scale": 1.05,
+      "transform": {
+        "position": [
+          -10,
+          0,
+          18
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "hero-tree-5",
+      "kind": "tree",
+      "movable": false,
+      "leaf": "#e08a2a",
+      "scale": 1.2,
+      "transform": {
+        "position": [
+          12,
+          0,
+          16
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "customs-stone",
+      "kind": "customs-stone",
+      "movable": false,
+      "transform": {
+        "position": [
+          -4.4,
+          0,
+          5.4
+        ],
+        "rotation": [
+          0,
+          0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "truthstone",
+      "kind": "truthstone",
+      "movable": false,
+      "transform": {
+        "position": [
+          7.6,
+          0,
+          2.4
+        ],
+        "rotation": [
+          0,
+          -0.4,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "chronicle",
+      "kind": "chronicle",
+      "movable": false,
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -14.65
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-blaze",
+      "kind": "blaze",
+      "movable": false,
+      "from": [
+        0,
+        0,
+        2.2
+      ],
+      "to": [
+        6.6,
+        0,
+        8.2
+      ],
+      "count": 7,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    },
+    {
+      "id": "keep-to-clocks",
+      "kind": "portal",
+      "movable": false,
+      "gatewayId": "keep-to-clocks",
+      "label": "Clock library",
+      "transform": {
+        "position": [
+          9.4,
+          0,
+          12.2
+        ],
+        "rotation": [
+          0,
+          -0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "gates"
+    },
+    {
+      "id": "keep-door-name",
+      "kind": "sign",
+      "movable": false,
+      "text": "Hearth plaza",
+      "style": "draft",
+      "width": 2.4,
+      "height": 0.46,
+      "visibility": "all",
+      "transform": {
+        "position": [
+          -2.4,
+          1.45,
+          12.8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "room": "court"
+    }
+  ],
+  "gateways": [
+    {
+      "id": "keep-to-star",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/keep/starfleet-star",
+      "label": "USS Star",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "starfleet-uss-star"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Bridge",
+      "steps": 1
+    },
+    {
+      "id": "keep-to-wilds",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/keep/wilds",
+      "label": "Wilds",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "wilds"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Forest and cabins",
+      "steps": 1
+    },
+    {
+      "id": "keep-to-lantern-study",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/keep/lantern-study",
+      "label": "Lantern study",
+      "host": "arch",
+      "target": {
+        "kind": "gltf",
+        "uri": "models/citizen-lantern.gltf",
+        "place": "lantern-study"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "glTF lantern",
+      "steps": 1
+    },
+    {
+      "id": "keep-to-clocks",
+      "fixed": true,
+      "movable": false,
+      "address": "ember://gateway/keep/clock-library",
+      "label": "Clock library",
+      "host": "arch",
+      "target": {
+        "kind": "place",
+        "place": "clock-library"
+      },
+      "fallback": {
+        "kind": "place",
+        "place": "fallback-unavailable"
+      },
+      "requires": null,
+      "onMap": false,
+      "group": "Places",
+      "subtitle": "Local time for each held seat",
+      "steps": 1
+    }
+  ]
+}
